@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/laurakcaron.github.io",
   siteMetadata: {
     siteUrl: `https://gatsby-starter-clean-resume.netlify.com/`,
     name: `Laura Caron`,
@@ -66,7 +65,6 @@ module.exports = {
         fulltextacc: "s",
         pubtype: "institutional econ",
         pubweb: "https://openknowledge.worldbank.org/handle/10986/34099",
-        fulltextpdf: "https://openknowledge.worldbank.org/bitstream/handle/10986/34099/The-Middle-Class-in-the-Philippines-An-Exploration-of-the-Conditions-for-Upward-Mobility.pdf?sequence=4&isAllowed=y",
         date: "2020"
       },
       {
