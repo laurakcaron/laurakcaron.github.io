@@ -18,18 +18,18 @@ const Layout = props => {
             name
             link
           }
-          theme
           font
         }
       }
     }
   `)
 
-  const theme = data.site.siteMetadata.theme || "great-gatsby"
   const font = data.site.siteMetadata.font || "default"
   return (
     <>
       <Helmet>
+      <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css"/>
+        <html lang="en"/>
         <title>
           {props.pageTitle} - {data.site.siteMetadata.name || ""}
         </title>
@@ -38,7 +38,7 @@ const Layout = props => {
 
       <div
         id="site-wrapper"
-        className={"theme-" + theme.toLowerCase() + " font-" + font}
+        className={" font-" + font}
       >
         <Menu
           currentPage={props.pageTitle}
@@ -57,7 +57,7 @@ const Layout = props => {
             </div>
             <div className="column" id="content-wrapper">
               <PageHeader title={props.pageTitle} />
-              {props.children}
+                  {props.children}
             </div>
           </div>
         </div>

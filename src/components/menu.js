@@ -5,10 +5,9 @@ import { Link } from "gatsby"
 const Menu = props => {
   const menuItems = [
     { name: "About", link: "/" },
-    { name: "Skills", link: "/skills" },
-    { name: "Education", link: "/education" },
+    { name: "Research", link: "/research" },
     { name: "Experience", link: "/experience" },
-    { name: "Interests", link: "/interests" },
+    { name: "Resources", link: "/resources" },
   ].map((item, index) => (
     <MenuItem
       to={item.link}

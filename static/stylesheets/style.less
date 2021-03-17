@@ -1,3 +1,10 @@
+:root {
+  --blue: #007faa;
+  --green: #24a159;
+  --yellow: #FDD451;
+  --orange: #808080;
+  --red: #d25299;
+}
 .site-title {
   font-size: 22px;
   font-weight: 300;
@@ -25,7 +32,7 @@
 .site-nav .page-link {
   color: #606c76;
   line-height: 1.5;
-  font-size: 0.9em;
+  font-size: 1.2em;
   padding: 0 2px 4px 2px;
 }
 .site-nav .page-link:not(:last-child) {
@@ -117,6 +124,10 @@ footer p {
 #profile-wrapper {
   text-align: center;
   flex: 2 2 auto;
+  margin-left: 10%;
+  @media screen and (max-width: 640px) {
+      margin-left:0;
+    }
 }
 #profile-wrapper p {
   margin-bottom: 2px;
@@ -233,7 +244,13 @@ td.item-more-info {
 }
 .social-icon:hover {
   opacity: 0.9;
+  color:var(--green) !important
 }
+.icon:hover {
+  opacity: 0.9;
+  color:var(--green) !important
+}
+
 #menu-name {
   font-size: 1.2em;
 }
@@ -260,83 +277,315 @@ a {
   text-decoration: none;
 }
 /* themes */
-/* default = great-gatsby */
 a {
-  color: #9b4dca;
-}
-.skill-meter {
-  background-color: #9b4dca;
+  color: var(--blue);
+  text-decoration: underline;
 }
 a:hover,
 a:focus,
 .site-nav .page-link.active {
-  color: #50a !important;
+  color: var(--green) !important;
 }
 .site-header {
-  border-top-color: #50a;
+  border-top-color: var(--blue);
 }
-/* darth-vader */
-.theme-darth-vader a {
-  color: #777;
-}
-.theme-darth-vader .skill-meter {
-  background-color: #777;
-}
-.theme-darth-vader a:hover,
-.theme-darth-vader a:focus,
-.theme-darth-vader .site-nav .page-link.active {
-  color: #000 !important;
-}
-.theme-darth-vader .site-header {
-  border-top-color: #000;
-}
-/* luke-lightsaber */
-.theme-luke-lightsaber a {
-  color: #5c94bd;
-}
-.theme-luke-lightsaber .skill-meter {
-  background-color: #5c94bd;
-}
-.theme-luke-lightsaber a:hover,
-.theme-luke-lightsaber a:focus,
-.theme-luke-lightsaber .site-nav .page-link.active {
-  color: #416a88 !important;
-}
-.theme-luke-lightsaber .site-header {
-  border-top-color: #416a88;
-}
-/* wonder-woman */
-.theme-wonder-woman a {
-  color: #dc4e48;
-}
-.theme-wonder-woman .skill-meter {
-  background-color: #dc4e48;
-}
-.theme-wonder-woman a:hover,
-.theme-wonder-woman a:focus,
-.theme-wonder-woman .site-nav .page-link.active {
-  color: #c81912 !important;
-}
-.theme-wonder-woman .site-header {
-  border-top-color: #c81912;
-}
-/* master-yoda */
-.theme-master-yoda a {
-  color: #4baea0;
-}
-.theme-master-yoda .skill-meter {
-  background-color: #4baea0;
-}
-.theme-master-yoda a:hover,
-.theme-master-yoda a:focus,
-.theme-master-yoda .site-nav .page-link.active {
-  color: #5f7f54 !important;
-}
-.theme-master-yoda .site-header {
-  border-top-color: #5f7f54;
-}
-
 .font-programmer {
   font-family: "IBM Plex Mono";
   font-size: 0.9em;
+}
+br {
+  display: block; 
+  content: ""; 
+  margin-top: 5px; 
+}
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.rowC{display:flex; flex-direction:row;}
+
+.card {
+  position: relative;
+  max-width: 1024px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  border-radius: 20px;
+  margin: 15px;
+  transition: 0.3s;
+
+}
+
+.card-grid{
+  width: 300px;
+  padding: 0px;
+  border-radius: 20px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right:0px;
+
+  @media screen and (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+  }
+   
+  @media screen and (max-width: 800px) {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+.first {
+  transition: 0.3s;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  opacity: 1;
+  z-index: 1;
+  line-height:15px;
+  border-radius: 5px;
+
+}
+.second {
+  position: absolute;
+  transition: 0.3s;  
+  opacity: 0;
+  background-color: rgba(255, 255, 255);
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding:15px;
+  border-radius: 5px;
+
+}
+
+.card:hover .second, .card:focus-within .second{
+  opacity:1;
+}
+
+.card:hover .first, .card:focus-within .first{
+    opacity: 0.0;
+}
+
+.button-outer{
+  text-align: left;
+}
+
+.button{
+  margin-left: 0rem;
+  padding-left:0rem;
+  padding-right:0rem;
+  margin-top: 7px;
+  padding: 0.75rem 0rem;  
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+  color: white;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 7px;
+  width: 75px;
+  text-align: center;
+  display: inline-block;
+  &:hover {
+    background-color: var(--green);
+  }
+}
+
+@keyframes fade_in_show {
+  0% {
+       opacity: 0;
+       transform: scale(0)
+  }
+
+  100% {
+       opacity: 1;
+       transform: scale(1)
+  }
+}
+@keyframes fade_out_show {
+  0% {
+       opacity: 1;
+       transform: scale(1)
+  }
+
+  100% {
+       opacity: 0;
+       transform: scale(0)
+  }
+}
+
+
+[value="All"]:not(:checked) ~ .card-grid .card{
+  height:0px;
+  width:0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  display:none;
+  animation:fade_out_show 0.5s;
+}
+
+[value="All"]:checked ~ .card-grid .card{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+}
+
+[value="institutional"]:checked ~ .card-grid .card[pubtype*="institutional"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="wp"]:checked ~ .card-grid .card[pubtype*="wp"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="journal"]:checked ~  .card-grid .card[pubtype*="journal"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="econ"]:checked ~ .card-grid .card[pubtype*="econ"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="nonecon"]:checked ~ .card-grid .card[pubtype*="nonecon"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="blog"]:checked ~ .card-grid .card[pubtype*="blog"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="conference"]:checked ~ .card-grid .card[pubtype*="conference"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+[value="history"]:checked ~ .card-grid .card[pubtype*="history"]{
+  height:325px;
+  width:300px;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
+  animation: fade_in_show 0.5s;
+  display:unset;
+
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+ 
+.filters * {
+  display: inline-block;
+}
+ 
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+  font-weight:normal;
+}
+ 
+.filters label:hover {
+  background:var(--orange);
+  color: white;
+}
+
+
+input[type="checkbox"]{
+  opacity: 0;
+  height:10px;
+  
+}
+[value="All"]:focus  ~ .filters [for="All"],
+[value="institutional"]:focus ~ .filters [for="institutional"],
+[value="wp"]:focus ~ .filters [for="wp"],
+[value="journal"]:focus ~ .filters [for="journal"],
+[value="econ"]:focus ~ .filters [for="econ"],
+[value="nonecon"]:focus ~ .filters [for="nonecon"],
+[value="blog"]:focus ~ .filters [for="blog"],
+[value="conference"]:focus ~ .filters [for="conference"],
+[value="history"]:focus ~ .filters [for="history"]{
+  background: var(--orange);
+  border-color: var(--orange);
+  border-width: 10px;
+  outline:black solid 1px;
+  color: white;
+}
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="institutional"]:checked ~ .filters [for="institutional"],
+[value="wp"]:checked ~ .filters [for="wp"],
+[value="journal"]:checked ~ .filters [for="journal"],
+[value="econ"]:checked ~ .filters [for="econ"],
+[value="nonecon"]:checked ~ .filters [for="nonecon"],
+[value="blog"]:checked ~ .filters [for="blog"],
+[value="conference"]:checked ~ .filters [for="conference"],
+[value="history"]:checked ~ .filters [for="history"]{
+  background: var(--red);
+  color: white;
+}
+
+.article-title{
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+  line-height: 1.2;
+  font-size:x-large;
+  color:var(--blue);
 }

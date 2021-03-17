@@ -26,7 +26,7 @@ export default props => {
       when={item.when}
       where={item.where}
       org={item.company}
-      moreInfo={item.moreInfo}
+      /*moreInfo={item.moreInfo}*/
     />
   ))
 

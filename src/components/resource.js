@@ -1,23 +1,22 @@
 import React from "react"
 
-const Item = props => {
+const Resource = props => {
   return (
     <table className="item-table">
       <tbody>
         <tr>
-          <td className="item-name">{props.name || ""}</td>
+          <td className="item-name"><a href={props.link}>{props.title || ""}</a></td>
           <td className="item-when">{props.when || ""}</td>
         </tr>
         <tr>
-          <td className="item-org">{props.org || ""}</td>
-          <td className="item-where" dangerouslySetInnerHTML={{ __html: props.where || "" }}
-></td>
+          <td className="item-org">{props.authors || ""}</td>
+          <td className="item-where">{props.where || ""}</td>
         </tr>
         <tr>
           <td
             className="item-more-info"
             colSpan={2}
-            dangerouslySetInnerHTML={{ __html: props.moreInfo }}
+            dangerouslySetInnerHTML={{ __html: props.description }}
           />
         </tr>
       </tbody>
@@ -25,4 +24,4 @@ const Item = props => {
   )
 }
 
-export default Item
+export default Resource 
