@@ -403,17 +403,18 @@ h1 {
 
 h2 {
   font-size: medium;
-  font-family: "Roboto";
+  font-family: "Open Sans";
   display:inline;
   font-stretch: semi-expanded;
   line-height: 1.1;
+  font-weight: lighter;
 }
 
 h3 {
   font-size: small;
-  font-weight: lighter;
+  font-weight: light;
+  font-family: "Open Sans";
   font-stretch: condensed;
-  font-family: "CMU Bright";
   line-height: .8;
   display:inline;
 }
