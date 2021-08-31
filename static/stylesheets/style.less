@@ -299,7 +299,15 @@ br {
   margin-top: 5px; 
 }
 img {
-  border-radius: 5px 5px 0 0;
+  border-radius: 8px;
+  position:relative;
+  border-color: rgba(0, 127, 170, 0);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.gatsby-image-wrapper {
+  margin: auto;
 }
 
 .rowC{display:flex; flex-direction:row;}
@@ -308,35 +316,38 @@ img {
   position: relative;
   max-width: 1024px;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-  border-radius: 20px;
-  margin: 15px;
+  border-radius: 8px;
+  margin: 5px;
   transition: 0.3s;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-grid{
-  width: 300px;
+  max-width: ;
   padding: 0px;
   border-radius: 20px;
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   margin-right:0px;
-
-  @media screen and (max-width: 900px) {
-      grid-template-columns: repeat(2, 1fr);
+  column-gap: 0px;
+  justify-content: space-around;
+  @media screen and (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
   }
    
-  @media screen and (max-width: 800px) {
-      grid-template-columns: repeat(1, 1fr);
+  @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
   }
+  @media screen and (max-width: 700px) {
+    grid-template-columns: repeat(1, 1fr);
+}
 
 }
 
 .first {
   transition: 0.3s;
-  background-color: white;
+  background-color: rgba(0, 127, 170, 0);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -344,7 +355,7 @@ img {
   opacity: 1;
   z-index: 1;
   line-height:15px;
-  border-radius: 5px;
+  border-radius: 8px;
 
 }
 .second {
@@ -358,7 +369,7 @@ img {
   height: 100%;
   z-index: 1;
   padding:15px;
-  border-radius: 5px;
+  border-radius: 8px;
 
 }
 
@@ -399,23 +410,19 @@ img {
 @keyframes fade_in_show {
   0% {
        opacity: 0;
-       transform: scale(0)
   }
 
   100% {
        opacity: 1;
-       transform: scale(1)
   }
 }
 @keyframes fade_out_show {
   0% {
        opacity: 1;
-       transform: scale(1)
   }
 
   100% {
        opacity: 0;
-       transform: scale(0)
   }
 }
 
@@ -425,99 +432,108 @@ img {
   width:0px;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.2s linear;
+  position: absolute;
   display:none;
   animation:fade_out_show 0.5s;
 }
 
 [value="All"]:checked ~ .card-grid .card{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 }
 
 [value="institutional"]:checked ~ .card-grid .card[pubtype*="institutional"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 [value="wp"]:checked ~ .card-grid .card[pubtype*="wp"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 [value="journal"]:checked ~  .card-grid .card[pubtype*="journal"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 [value="econ"]:checked ~ .card-grid .card[pubtype*="econ"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
-[value="nonecon"]:checked ~ .card-grid .card[pubtype*="nonecon"]{
+[value="non"]:checked ~ .card-grid .card[pubtype*="non"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 [value="blog"]:checked ~ .card-grid .card[pubtype*="blog"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 [value="conference"]:checked ~ .card-grid .card[pubtype*="conference"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 [value="history"]:checked ~ .card-grid .card[pubtype*="history"]{
   height:325px;
-  width:300px;
+  width:200px;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
   animation: fade_in_show 0.5s;
   display:unset;
+  position:relative;
 
 }
 
@@ -547,7 +563,7 @@ img {
 }
 
 
-input[type="checkbox"]{
+input[type="radio"]{
   opacity: 0;
   height:10px;
   
@@ -557,7 +573,7 @@ input[type="checkbox"]{
 [value="wp"]:focus ~ .filters [for="wp"],
 [value="journal"]:focus ~ .filters [for="journal"],
 [value="econ"]:focus ~ .filters [for="econ"],
-[value="nonecon"]:focus ~ .filters [for="nonecon"],
+[value="non"]:focus ~ .filters [for="non"],
 [value="blog"]:focus ~ .filters [for="blog"],
 [value="conference"]:focus ~ .filters [for="conference"],
 [value="history"]:focus ~ .filters [for="history"]{
@@ -573,7 +589,7 @@ input[type="checkbox"]{
 [value="wp"]:checked ~ .filters [for="wp"],
 [value="journal"]:checked ~ .filters [for="journal"],
 [value="econ"]:checked ~ .filters [for="econ"],
-[value="nonecon"]:checked ~ .filters [for="nonecon"],
+[value="non"]:checked ~ .filters [for="non"],
 [value="blog"]:checked ~ .filters [for="blog"],
 [value="conference"]:checked ~ .filters [for="conference"],
 [value="history"]:checked ~ .filters [for="history"]{

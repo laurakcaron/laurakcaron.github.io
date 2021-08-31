@@ -15,7 +15,6 @@ export default props => {
             image
             abstract
             fulltextpdf
-            fulltextacc
             color
             pubtype
             pubweb
@@ -34,7 +33,7 @@ export default props => {
           authors={item.authors}
           abstract={item.abstract}
           fulltextpdf={item.fulltextpdf}
-          fulltextacc={item.fulltextacc}
+          //fulltextacc={item.fulltextacc}
           color={item.color}
           pubtype={item.pubtype}
           pubweb={item.pubweb}
@@ -48,15 +47,15 @@ export default props => {
     >
     Use the selections below to explore the gallery.
 
-<input type="checkbox" id="All" name="categories" value="All" aria-label="All"/>
-<input type="checkbox" id="journal" name="categories" value="journal" aria-label="Journal articles"></input>
-<input type="checkbox" id="institutional" name="categories" value="institutional"/>
-<input type="checkbox" id="wp" name="categories" value="wp"></input>
-<input type="checkbox" id="blog" name="categories" value="blog"></input>
-<input type="checkbox" id="conference" name="categories" value="conference"></input>
-<input type="checkbox" id="econ" name="categories" value="econ"></input>
-<input type="checkbox" id="nonecon" name="categories" value="nonecon"></input>
-<input type="checkbox" id="history" name="categories" value="history"></input>
+<input type="radio" id="All" name="categories" value="All" aria-label="All"/>
+<input type="radio" id="journal" name="categories" value="journal" aria-label="Journal articles"></input>
+<input type="radio" id="institutional" name="categories" value="institutional"/>
+<input type="radio" id="wp" name="categories" value="wp"></input>
+<input type="radio" id="blog" name="categories" value="blog"></input>
+<input type="radio" id="conference" name="categories" value="conference"></input>
+<input type="radio" id="econ" name="categories" value="econ"></input>
+<input type="radio" id="non" name="categories" value="non"></input>
+<input type="radio" id="history" name="categories" value="history"></input>
 
 <div class="filters" role="list">
   <li aria-label="All">
@@ -72,7 +71,7 @@ export default props => {
     <label for="wp">Working Papers</label>
   </li>
   <li>
-    <label for="blog">News Articles & Blogs</label>
+    <label for="blog">Commentary</label>
   </li>
   <li>
     <label for="conference">Conferences & Presentations</label>
@@ -81,7 +80,7 @@ export default props => {
     <label for="econ">Economics</label>
   </li>
   <li>
-    <label for="nonecon">Econ-Related Fields</label>
+    <label for="non">Econ-Related Fields</label>
   </li>
   <li>
     <label for="history">History</label>

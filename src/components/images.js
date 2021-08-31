@@ -15,8 +15,8 @@ const Image = props => (
             name
             childImageSharp {
               gatsbyImageData(layout: FIXED
-                              width: 300
-                              height: 150)
+                              width: 198
+                              height: 198)
             }
           }   
         }

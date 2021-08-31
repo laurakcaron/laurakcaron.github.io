@@ -14,10 +14,57 @@ module.exports = {
       {name: "github", link:"https://github.com/laurakcaron"},
     ],
     about: `
-      <p>I am a PhD Student in Economics at Columbia University.</p>
+      <p>I am a PhD Student in Economics at Columbia University interested in labor and development.</p>
       `,
     research: [
       {
+        shorttitle: "The Pandemic Drove Savings Rates Sky-High. They Still Haven’t Fallen to Earth.",
+        authors: "Laura Caron and Erwin Tiongson",
+        image: "barrons-savings.PNG",
+        alt: "A graph shows the savings rates in Australia, Canada, France, Germany, the United Kingdom, and the United States from January 2019 through January/April 2021. The title reads 'Savings rates as a percentage of income spiked in 2020. They're yet to fall to prepandemic levels'. The graph shows steady savings rates until April 2020, where there is a spike, following which rates fall slightly but remain higher than previously.",
+        abstract: "As economies have reopened following the Covid-19 lockdowns, spending has increased sharply in many Western economies. Some believe we are seeing the release of “pent up” demand as households spend savings built up earlier in the pandemic. But new evidence gives reason to doubt this hypothesis.",
+        place: "Barron's", 
+        pubweb: "https://www.barrons.com/articles/the-pandemic-changed-how-we-save-spelling-trouble-for-the-recovery-51624476916",
+        pubtype: "blog econ",
+        date: "2021"
+
+      },
+      {
+        shorttitle: "The pandemic poverty penalty: how COVID-19 complicates our measure of household well-being",
+        authors: "Laura Caron and Erwin Tiongson", 
+        image: "poverty-penalty.png",
+        alt: "A near-empty commuting train in Chicago in October 2020. Photo: Raed Mansour via a CC BY 2.0 licence", 
+        abstract: "Some countries measure well-being, including inequalities in well-being, by consumption. But when people no longer travel to work or eat in restaurants because of COVID, the assumed relationship between spending and well-being – already loose, because of the poverty penalty – breaks down.", 
+        place: "LSE COVID-19 Blog", 
+        pubweb: "https://blogs.lse.ac.uk/covid19/2021/06/15/the-pandemic-poverty-penalty-how-covid-19-complicates-our-measure-of-household-well-being/", 
+        pubtype: "blog econ", 
+        date: "2021"
+    },
+    {
+      shorttitle: "The Kingdom of Eswatini: Systematic Country Diagnostic",
+      authors: "The World Bank", 
+      image: "eswatini-scd.png",
+      alt: "A table showing the estimated impact of the COVID-19 crisis, 2020.",
+      abstract: "Eswatini has high levels of poverty and income inequality, which are not commensurate with its middle-income status. This Systematic Country Diagnostic views addressing inequality of opportunity, manifested in people’s unequal access to assets, markets, services, and rights, as central to accelerating poverty reduction and shared prosperity in Eswatini.", 
+      place: "The World Bank", 
+      pubweb: "https://openknowledge.worldbank.org/handle/10986/34970", 
+      fulltextpdf: "https://documents1.worldbank.org/curated/en/966931608603154612/pdf/Eswatini-Systematic-Country-Diagnostic-Toward-Equal-Opportunity-Accelerating-Inclusion-and-Poverty-Reduction.pdf",
+      pubtype: "institutional econ", 
+      date: "2020"
+     },    
+    {
+      shorttitle: "Namibia Systematic Country Diagnostic",
+      authors: "The World Bank", 
+      image: "namibia-scd.png",
+      alt: "A map of Namibia titled Basic simulation results, without floods. The map shows simulated changes in income ranging from +10,000 to -40,000 with the largest decreases in the northeast and west of Namibia.",
+      abstract: "Despite decades marked by progress, deep underlying challenges remain in Namibia, undermining the prospects for further advancement. Namibia has been in recession since 2016 and public finances have continued to deteriorate.", 
+      place: "The World Bank", 
+      pubweb: "https://openknowledge.worldbank.org/handle/10986/35434", 
+      fulltextpdf: "https://openknowledge.worldbank.org/bitstream/handle/10986/35434/Namibia-Systematic-Country-Diagnostics.pdf?sequence=1&isAllowed=y",
+      pubtype: "institutional econ", 
+      date: "2020"
+     },
+    {
         shorttitle:"China, India lead in Asia but new growth sources will shake up the global economy",
         authors:"Laura Caron and Erwin Tiongson",
         image: "scmp-weo.PNG",
@@ -27,7 +74,6 @@ module.exports = {
         fulltextacc: "s",
         pubtype: "blog econ",
         pubweb: "https://www.scmp.com/comment/opinion/article/3109263/china-india-lead-asia-new-growth-sources-will-shake-global-economy",
-        fulltextpdf: "https://www.scmp.com/comment/opinion/article/3109263/china-india-lead-asia-new-growth-sources-will-shake-global-economy",
         date: "2020",
       },
       {
@@ -43,16 +89,25 @@ module.exports = {
         date: "2020"
       },
       {
+        shorttitle:"Eswatini - Economic Recovery Development Policy Loan Project",
+        authors:"The World Bank",
+        image:"eswatini-dpo.png",
+        abstract: "This program document presents a first US40 million dollars Economic Recovery Development Policy Loan to the Kingdom of Eswatini. The Poverty and Social Impact Analysis of this operation (Annex 4) confirms that most reforms supported by this operation will benefit the poor and vulnerable.",
+        place:"The World Bank",
+        pubtype: "institutional econ",
+        pubweb: "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/366911606100452341/eswatini-economic-recovery-development-policy-loan-project",
+        fulltextpdf: "https://documents1.worldbank.org/curated/en/366911606100452341/pdf/Eswatini-Economic-Recovery-Development-Policy-Loan-Project.pdf",
+        date: "2020"
+      },
+      {
         shorttitle:"Immigrants are still sending lots of money home despite the coronavirus job losses – for now",
         authors:"Laura Caron and Erwin Tiongson",
         image: "conversation-remittances.PNG",
         alt: "A background image shows hands holding US dollar bills.",
         abstract: "Remittances to countries like Mexico, Pakistan and Vietnam are keeping pace with 2019's record levels or in some cases rising, despite spring forecasts of a 20% decline.",
         place:"The Conversation",
-        fulltextacc: "s",
         pubtype: "blog econ",
         pubweb: "https://theconversation.com/immigrants-are-still-sending-lots-of-money-home-despite-the-coronavirus-job-losses-for-now-148387",
-        fulltextpdf: "https://theconversation.com/immigrants-are-still-sending-lots-of-money-home-despite-the-coronavirus-job-losses-for-now-148387",
         date: "2020",
         color:"blue"
       },
@@ -60,7 +115,7 @@ module.exports = {
         shorttitle:"The Middle Class in the Philippines: An Exploration of the Conditions for Upward Mobility",
         authors:"The World Bank",
         image: "middleclass.PNG",
-        abstract: "A decade of rapid economic growth has supported upward mobility and the expansion of the middle class in the Philippines. While the Philippines’ record of economic growth has been sound, many East Asian countries have performed better, resulting in higher levels of economic mobility and more rapid middle-class expansion....",
+        abstract: "A decade of rapid economic growth has supported upward mobility and the expansion of the middle class in the Philippines. While the Philippines’ record of economic growth has been sound, many East Asian countries have performed better, resulting in higher levels of economic mobility and more rapid middle-class expansion.",
         place:"The World Bank",
         fulltextacc: "s",
         pubtype: "institutional econ",
@@ -76,19 +131,17 @@ module.exports = {
         fulltextacc: "https://openknowledge.worldbank.org/bitstream/handle/10986/33953/Jobs-Interventions-for-Refugees-and-Internally-Displaced-Persons.txt?sequence=2&isAllowed=y",
         pubtype: "wp econ",
         pubweb: "https://openknowledge.worldbank.org/handle/10986/33953",
-        fulltextpdf: "https://openknowledge.worldbank.org/bitstream/handle/10986/33953/Jobs-Interventions-for-Refugees-and-Internally-Displaced-Persons.pdf?sequence=1",
         date: "2020"
       },
       {
         shorttitle: "Towards Safer and More Productive Migration for South Asia",
         authors:"S. Amer Ahmed et al.",
         image: "south-asia-migration.PNG",
-        abstract: "South Asian economies are at a stage of demographic transition where people of working-age are generally still increasing shares of populations, with millions of people entering the working-age cohort every year for another generation. This report focuses on Bangladesh, Nepal, and Pakistan - three countries in the region sharing similar characteristics, opportunities, and challenges.",
+        abstract: "International migration for temporary employment is a critical component of South Asia’s development path, from both the jobs and remittance flows perspectives. This report focuses on Bangladesh, Nepal, and Pakistan - three countries in the region sharing similar characteristics, opportunities, and challenges.",
         place:"The World Bank",
         fulltextacc: "http://documents1.worldbank.org/curated/en/903161585816440273/text/Towards-Safer-and-More-Productive-Migration-for-South-Asia.txt",
         pubtype: "institutional econ",
         pubweb: "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/903161585816440273/towards-safer-and-more-productive-migration-for-south-asia",
-        fulltextpdf: "http://documents1.worldbank.org/curated/en/903161585816440273/pdf/Towards-Safer-and-More-Productive-Migration-for-South-Asia.pdf",
         date: "2020"
       },
       {
@@ -98,9 +151,8 @@ module.exports = {
         abstract: "We use survey data collected in 2017 to examine self-reports of depression, anxiety, chronic fatigue, and pain among domestic migrants, returned U.S. migrants, and non-migrants. Compared to domestic migrants, U.S. migrants are positively selected but these characteristics are not protective for them.",
         place:"Frontiers in Psychiatry",
         fulltextacc: "s",
-        pubtype: "journal nonecon",
+        pubtype: "journal non",
         pubweb: "https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00970/full",
-        fulltextpdf: "https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00970/full",
         date: "2020"
       },
       {
@@ -112,7 +164,6 @@ module.exports = {
         fulltextacc: "s",
         pubtype: "blog econ",
         pubweb: "https://responsiblefinanceforum.org/can-digital-finance-support-agriculture-using-alternative-data-sources-support-consumer-protection/",
-        fulltextpdf: "https://responsiblefinanceforum.org/can-digital-finance-support-agriculture-using-alternative-data-sources-support-consumer-protection/",
         date: "2019"
       },
       {
@@ -124,7 +175,6 @@ module.exports = {
         fulltextacc: "s",
         pubtype: "blog econ",
         pubweb: "https://responsiblefinanceforum.org/fintechs-big-data-opportunities-risks-approaches-consumer-data-protection-data-protection-kenya-east-africa/",
-        fulltextpdf: "https://responsiblefinanceforum.org/fintechs-big-data-opportunities-risks-approaches-consumer-data-protection-data-protection-kenya-east-africa/",
         date: "2019"
       },
       {
@@ -136,19 +186,19 @@ module.exports = {
         fulltextacc: "s",
         pubtype: "blog econ",
         pubweb: "https://responsiblefinanceforum.org/can-digital-finance-support-agriculture-using-alternative-data-sources-support-consumer-protection/",
-        fulltextpdf: "https://responsiblefinanceforum.org/can-digital-finance-support-agriculture-using-alternative-data-sources-support-consumer-protection/",
         date: "2019"
       },
       {
         shorttitle:"Women’s Work: Can the Burden of Household Work Explain the Gender Wage Gap?",
         authors: "Laura Caron", 
+        abstract: "What drives the gender wage gap between men and women? Across countries, women make 25% less than men, and household work explains 3.7 percentage points of this gap (6.7pp among countries where it is significant, about a quarter of the total wage gap).",
         image: "womens-work.PNG",
         place:"Carroll Round Conference",
         pubtype: "econ conference",
         date: "2019"
       },  
       {
-        shorttitle:"“l’esperienza di Padre Angelo Secchi negli USA” (The Experience of Father Angelo Secchi in the USA)",
+        shorttitle:"The Experience of Father Angelo Secchi in the USA",
         authors: "Emanuela Del Gado and Laura Caron", 
         image: "secchi.PNG",
         date:"2018",
@@ -174,7 +224,8 @@ module.exports = {
         pubweb: "https://www.ncsl.org/research/environment-and-natural-resources/lead-in-the-water-disclosing-lead-service-lines.aspx",
         fulltextpdf: "https://www.youtube.com/watch?v=CLxda6-riU8&feature=youtu.be", 
         image: "lead-webinar.PNG", 
-        pubtype: "nonecon conference"
+        pubtype: "non conference", 
+        abstract: "MA children are being exposed to lead. Progress reducing lead in water has stalled recently. Proposed legislation would require the disclosure of lead pipes in home rentals and sales."
       },
     ],
     experience: [
@@ -196,14 +247,14 @@ module.exports = {
         role: "Research Assistant",
         when: "June 2019 – August 2020",
         company: "Institute for the Study of International Migration at Georgetown University",
-        where: `<a href="https://isim.georgetown.edu/profile/katharine-m-donato/">Professor Katharine Donato</a>`,
+        where: `<a href="https://isim.georgetown.edu/profile/katharine-m-donato/">Professor Katharine Donato</a>, coauthoring with <a href="https://sociology.ucdavis.edu/people/erh">Professor Erin Hamilton</a>`,
         moreInfo: `Analysis of several datasets to prepare profiles of refugees in the United States, including wage differentials between refugees and other immigrants, and to determine the relationship between mental health and migration for migrants from Mexico, paper published. Cleaning and preparing analysis of Bangladesh migration survey for spring conference submission.`
       },
       {
         role: "Carroll Round Research Scholar",
         when: "June 2019 – November 2019",
         company: "Georgetown University",
-        where: `<a href="http://shareenjoshi.com/">Professor Shareen Joshi</a> and <a href="https://www.worldbank.org/en/about/people/s/s-anukriti">Professor S. Anukriti</a>`,
+        where: `<a href="http://shareenjoshi.com/">Professor Shareen Joshi</a> and <a href="https://www.worldbank.org/en/about/people/s/s-anukriti">Professor S. Anukriti</a>`,   
         moreInfo: `Preparing analysis of large health surveys in India to study the modern-day impacts of historical violence on health and access to healthcare.`
       },
       {
@@ -275,10 +326,10 @@ module.exports = {
     ],
     researchresources: [
       {
-        title: "How to make a regression model",
-        link: "https://twitter.com/nickchk/status/1367234550867259392",
-        description: "A flowchart with rules-of-thumb for what variables to include in a regression.",
-        authors: "Nick HK, @nickchk",
+        title: "Library of Statistical Techniques (LOST)", 
+        link: "https://lost-stats.github.io/", 
+        description: "A wiki for statistical techniques and how to implement them in various softwares.", 
+        authors: "Nick Huntington-Klein"
       },
       {
         title: "Resources for Learning R",
@@ -296,6 +347,12 @@ module.exports = {
         title: "Diversifying Economics Seminars - Speakers List",
         link: "https://econspeakerdiversity.shinyapps.io/EconSpeakerDiversity/",
         authors: "Committee on the Status of Minority Groups in the Economics Profession",
+      }, 
+      {
+        title: "How to make a regression model",
+        link: "https://twitter.com/nickchk/status/1367234550867259392",
+        description: "A flowchart with rules-of-thumb for what variables to include in a regression.",
+        authors: "@nickchk on Twitter",
       },
     ],
     teachingresources: [
@@ -318,6 +375,12 @@ module.exports = {
         description: "A list of research on bias in course evaluations.",
         authors: "Rebecca J. Kreitzer",
       },
+      {
+        title: "Tips for Mentoring Students", 
+        link: "https://twitter.com/DaveASiegel/status/1394447730890756096?s=20", 
+        description: "Tips for beginning to mentor students", 
+        authors: "@DaveASiegel on Twitter"
+      }
 
     ],
     coursesresources: [
@@ -332,6 +395,24 @@ module.exports = {
         description: `"This is the website for Professor Pamela Jakiela’s ECON 379/523 at Williams College, Program Evaluation for International Development. The course is intended for advanced undergraduates majoring in economics and masters students at the Center for Development Economics."`,
         authors: "Pamela Jakiela",
       },
+      {
+        title: "Text as Data Class for Spring 2021",
+        link: "https://github.com/ArthurSpirling/text-as-data-class-spring2021",
+        description: "The lectures and materials from Arthur Spirling's Text as Data class at NYU DS.",
+        authors: "Arthur Spirling"
+      },
+      {
+        title: "Applied Empirical Methods", 
+        link: "https://github.com/paulgp/applied-methods-phd", 
+        description: "Course videos and materials for PhD level applied econometrics methods.", 
+        authors: "Paul Goldsmith-Pinkham"
+      },
+      {
+        title: "Hidden Curriculum Salons", 
+        link: "https://www.elenabarham.com/teaching", 
+        description: "A series of slides from workshops outlining the hidden curriculum in graduate school, especially in political science.", 
+        authors: "Elena Barham and Colleen Wood"
+      }
 
     ],
     accessresources: [
@@ -340,6 +421,12 @@ module.exports = {
         link: "https://uxdesign.cc/how-to-write-an-image-description-2f30d3bf5546",
         description: "A how-to on writing image descriptions.",
         authors: "Alex Chen, UX Collective",
+      },
+      {
+        title: "Tips for Writing Image Descriptions", 
+        link: "https://twitter.com/whykristenburns/status/1391108176695726085?s=20",
+        description: "Tips for writing image descriptions for social media", 
+        authors: "@whykristenburns on Twitter"
       },
       {
         title: "Disability Language Style Guide",
@@ -358,10 +445,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-111111111-1",
+        trackingId: "G-124XFG2YGW",
         head: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-124XFG2YGW",
+           ],
+      },
+    },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -380,6 +476,9 @@ module.exports = {
       options: {
         fonts: [
             `IBM Plex Mono`,
+            `Open Sans`,
+            `Roboto`,
+            `News Cycle`
         ],
 				display: 'swap'
       },
