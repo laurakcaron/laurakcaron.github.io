@@ -12,9 +12,9 @@ collections:
     folder: publications
     extension: json
     create: true
-    slug: "{{year}}-{{slug}}"
+    slug: "{{year}}-{{filename}}"
     fields:
-      - { name: slug, label: slug }
+      - { name: filename, label: filename }
       - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
       - { name: shorttitle, label: Title }
       - { name: authors, label: Authors }
