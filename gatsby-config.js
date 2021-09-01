@@ -468,7 +468,6 @@ module.exports = {
            ],
       },
     },
-
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -479,8 +478,16 @@ module.exports = {
       path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+       options: {
+       name: `publications`,
+       path: `${__dirname}/publications`,
+       },
+     },    
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify-cms`,
 		`gatsby-plugin-less`,
     {
       resolve: `gatsby-plugin-google-fonts`,

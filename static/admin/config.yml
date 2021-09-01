@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: laurakcaron/laurakcaron.github.io
+  branch: source
+
+media_folder: src/images
+public_folder: /images
+
+collections:
+  - name: publication
+    label: Publication
+    folder: publications
+    extension: json
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - { name: slug, label: slug }
+      - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
+      - { name: title, label: Title }
+      - { name: authors, label: Authors }
+      - { name: publisher, label: Publisher, required: false}
+      - { name: abstract, label: abstract, widget: text, required: false}
+      - { name: image, label: Image, widget: image, required: false}
+      - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "journal", "blog"], required: false}
+      - { name: fulltextpdf, label: Full Text PDF, required: false}
