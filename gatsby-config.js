@@ -207,6 +207,17 @@ module.exports = {
         pubweb: "https://www.acistampa.com/story/padre-angelo-secchi-e-la-scienza-al-servizio-dei-fratelli-9853"
       },
       {
+        shorttitle:"The Heyden Observatory at Georgetown University",
+        authors: "Laura Caron",
+        place: "American Astronomical Society Historical Astronomy Division Newsletter",
+        date: "2018",
+        pubweb: "https://had.aas.org/news/had_news",
+        fulltextpdf: "https://had.aas.org/sites/had.aas.org/files/HADN92.pdf",
+        image: "observatory-had.PNG",
+        pubtype: "history blog", 
+        abstract: "The Heyden Observatory, formerly the Georgetown College Observatory, built in 1843, still stands above the campus of Georgetown University in Washington, DC"
+      },      
+      {
         shorttitle:"The Legacy of the Georgetown College Observatory (D.C.)",
         authors: "Laura Caron, Grace Maglieri, and Patrick Seitzer",
         place: "American Astronomical Society, AAS Meeting #231",
