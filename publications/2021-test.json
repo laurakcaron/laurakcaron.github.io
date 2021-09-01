@@ -1,7 +1,14 @@
 {
+  "abstract": "test",
+  "place": "test",
+  "authors": "test",
   "slug": "test",
   "date": "2020",
+  "fulltextpdf": "test",
+  "pubweb": "test",
+  "pubtype": [
+    "journal"
+  ],
   "title": "test",
-  "authors": "test",
   "shorttitle": "test"
 }
