@@ -18,6 +18,7 @@ export default props => {
           pubtype
           pubweb
           date
+          alt
         }
       }
     }
@@ -36,7 +37,8 @@ export default props => {
           //fulltextacc={item.fulltextacc}
           pubtype={item.node.pubtype}
           pubweb={item.node.pubweb}
-          image={item.node.image}/>
+          image={item.node.image}
+          alt={item.node.alt}/>
   ))
 
   return (

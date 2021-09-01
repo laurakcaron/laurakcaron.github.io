@@ -21,6 +21,7 @@ collections:
       - { name: place, label: Publisher, required: false}
       - { name: abstract, label: abstract, widget: text, required: false}
       - { name: image, label: Image, widget: image, required: false}
+      - { name: alt, label: Alt Text, widget: text, required: false}
       - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "journal", "blog"], required: false}
       - { name: fulltextpdf, label: Full Text PDF, required: false}
       - { name: pubweb, label: Publisher Website, required: false}

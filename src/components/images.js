@@ -25,7 +25,7 @@ const Image = props => (
     `}
   render={data => {
    const image = data.images.edges.find(n => {
-      let regex = /[^images]*$/g
+      let regex = /[^/]*$/g
       return n.node.relativePath.includes(regex.exec(props.filename));
     });
     if (!image) {
