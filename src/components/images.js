@@ -8,7 +8,7 @@ const Image = props => (
   <StaticQuery
     query ={graphql`
     query {
-      images: allFile {
+      images: allFile(filter: { sourceInstanceName: { eq: "data" } }) {
         edges {
           node {
             relativePath
@@ -25,7 +25,8 @@ const Image = props => (
     `}
   render={data => {
    const image = data.images.edges.find(n => {
-      return n.node.relativePath.includes(props.filename);
+      let regex = /[^images]*$/g
+      return n.node.relativePath.includes(regex.exec(props.filename));
     });
     if (!image) {
       return null;
