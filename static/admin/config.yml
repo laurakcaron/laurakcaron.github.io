@@ -3,8 +3,8 @@ backend:
   repo: laurakcaron/laurakcaron.github.io
   branch: source
 
-media_folder: src/images
-public_folder: images
+media_folder: src/images/
+public_folder: images/
 
 collections:
   - name: publication
