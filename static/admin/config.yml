@@ -16,10 +16,11 @@ collections:
     fields:
       - { name: slug, label: slug }
       - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
-      - { name: title, label: Title }
+      - { name: shorttitle, label: Title }
       - { name: authors, label: Authors }
-      - { name: publisher, label: Publisher, required: false}
+      - { name: place, label: Publisher, required: false}
       - { name: abstract, label: abstract, widget: text, required: false}
       - { name: image, label: Image, widget: image, required: false}
       - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "journal", "blog"], required: false}
       - { name: fulltextpdf, label: Full Text PDF, required: false}
+      - { name: pubweb, label: Publisher Website, required: false}

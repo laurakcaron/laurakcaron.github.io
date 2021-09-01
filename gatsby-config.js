@@ -468,7 +468,6 @@ module.exports = {
            ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -478,6 +477,7 @@ module.exports = {
       path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
        options: {

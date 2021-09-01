@@ -5,39 +5,40 @@ import LinkCard from "../components/link-cards"
 
 export default props => {
   const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          research {
-            shorttitle
-            authors
-            place
-            image
-            abstract
-            fulltextpdf
-            color
-            pubtype
-            pubweb
-            date
-          }
+  query {
+    allPublicationsJson {
+      edges {
+        node {
+          shorttitle
+          authors
+          place
+          image
+          abstract
+          fulltextpdf
+          color
+          pubtype
+          pubweb
+          date
         }
       }
     }
+  }
+  
   `)
 
-  const cardGrid = data.site.siteMetadata.research.map((item, index) => (
+  const cardGrid = data.allPublicationsJson.edges.map((item, index) => (
         <LinkCard 
-          date={item.date}
-          place={item.place}
-          shorttitle={item.shorttitle}
-          authors={item.authors}
-          abstract={item.abstract}
-          fulltextpdf={item.fulltextpdf}
+          date={item.node.date}
+          place={item.node.place}
+          shorttitle={item.node.shorttitle}
+          authors={item.node.authors}
+          abstract={item.node.abstract}
+          fulltextpdf={item.node.fulltextpdf}
           //fulltextacc={item.fulltextacc}
-          color={item.color}
-          pubtype={item.pubtype}
-          pubweb={item.pubweb}
-          image={item.image}/>
+          color={item.node.color}
+          pubtype={item.node.pubtype}
+          pubweb={item.node.pubweb}
+          image={item.node.image}/>
   ))
 
   return (
