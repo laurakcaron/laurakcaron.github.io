@@ -15,7 +15,6 @@ export default props => {
           image
           abstract
           fulltextpdf
-          color
           pubtype
           pubweb
           date
@@ -35,7 +34,6 @@ export default props => {
           abstract={item.node.abstract}
           fulltextpdf={item.node.fulltextpdf}
           //fulltextacc={item.fulltextacc}
-          color={item.node.color}
           pubtype={item.node.pubtype}
           pubweb={item.node.pubweb}
           image={item.node.image}/>

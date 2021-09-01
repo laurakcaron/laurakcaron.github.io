@@ -4,7 +4,6 @@ backend:
   branch: source
 
 media_folder: src/images
-public_folder: /images
 
 collections:
   - name: publication
