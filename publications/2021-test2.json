@@ -3,6 +3,9 @@
   "date": "2021",
   "title": "test2",
   "authors": "test2",
-  "image": "",
-  "shorttitle": "test2"
+  "image": "/images/barrons-savings.PNG",
+  "shorttitle": "test2",
+  "pubtype": [
+    "nonecon"
+  ]
 }
