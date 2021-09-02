@@ -6,7 +6,7 @@ import LinkCard from "../components/link-cards"
 export default props => {
   const data = useStaticQuery(graphql`
   query {
-    allPublicationsJson {
+    allPublicationsJson(sort: {fields: [date, month], order:DESC}) {
       edges {
         node {
           shorttitle

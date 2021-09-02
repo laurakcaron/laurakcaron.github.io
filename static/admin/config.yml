@@ -9,7 +9,7 @@ public_folder: images/
 collections:
   - name: publication
     label: Publication
-    folder: publications
+    folder: content/publications
     extension: json
     create: true
     slug: "{{date}}-{{filename}}"
@@ -20,9 +20,33 @@ collections:
       - { name: shorttitle, label: Title }
       - { name: authors, label: Authors }
       - { name: place, label: Publisher, required: false}
-      - { name: abstract, label: abstract, widget: text, required: false}
+      - { name: abstract, label: Abstract, widget: text, required: false}
       - { name: image, label: Image, widget: image, required: false}
       - { name: alt, label: Alt Text, widget: text, required: false}
-      - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "journal", "blog"], required: false}
+      - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "history", "journal", "blog", "institutional", "wp", "conference"], required: false}
       - { name: fulltextpdf, label: Full Text PDF, required: false}
       - { name: pubweb, label: Publisher Website, required: false}
+  - name: resource
+    label: Resource
+    folder: content/resources
+    extension: json
+    create: true
+    slug: "{{date}}-{{filename}}"
+    fields:
+      - { name: filename, label: filename }
+      - { name: title, label: Title }
+      - { name: link, label: Link }
+      - { name: description, label: Description, widget: text, required: false}
+      - { name: type, label: Resource Type, widget: select, multiple: true, options: ["student", "research", "accessibility"], required: false}
+  - name: experience
+    label: Experience
+    folder: content/experiences
+    extension: json
+    create: true
+    slug: "{{date}}-{{filename}}"
+    fields:
+      - { name: filename, label: filename }
+      - { name: role, label: Role }
+      - { name: company, label: Company }
+      - { name: where, label: Location, widget: code }
+      - { name: moreInfo, label: Description, widget: text, required: false}

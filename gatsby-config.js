@@ -481,10 +481,10 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
        options: {
-       name: `publications`,
-       path: `${__dirname}/publications`,
+       name: `content`,
+       path: `${__dirname}/content`,
        },
-     },    
+     },      
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cms`,
