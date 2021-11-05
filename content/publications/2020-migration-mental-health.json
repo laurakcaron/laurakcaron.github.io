@@ -1,0 +1,16 @@
+{
+  "month": "February",
+  "abstract": "We use survey data collected in 2017 to examine self-reports of depression, anxiety, chronic fatigue, and pain among domestic migrants, returned U.S. migrants, and non-migrants. Compared to domestic migrants, U.S. migrants are positively selected but these characteristics are not protective for them.",
+  "place": "Frontiers in Psychiatry",
+  "filename": "migration-mental-health",
+  "authors": "Katharine Donato, Laura Caron, and Erin Hamilton",
+  "alt": "A bar chart shows the Mental health conditions of U.S. and Mexican Migrants and Non-Migrants. The bars compare migrants to the US, migrants within Mexico, and non-migrants. Rates of depression are similar for all groups, between 5 and 6%. Rates of anxiety are significantly higher for migrants within Mexico, reaching 22.6% compared with 17.5% for nonmigrants. Rates of fatigue are also higher for migrants within Mexico (6.3%) as are rates of pain (7.1%). ",
+  "date": "2020",
+  "pubweb": "https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00970/full",
+  "pubtype": [
+    "nonecon",
+    "journal"
+  ],
+  "image": "images/migration-mental-health.jpg",
+  "shorttitle": "Migration and Mental Health in Mexico: Domestic Migrants, Return U.S. Migrants, and Non-Migrants"
+}
