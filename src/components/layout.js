@@ -33,7 +33,7 @@ const Layout = props => {
         <title>
           {props.pageTitle} - {data.site.siteMetadata.name || ""}
         </title>
-        <meta name="description" content={props.pageDescription || ""} />
+        <meta name="description" content={props.pageDescription || ""} href="/static/favicon.jpg"/>
       </Helmet>
 
       <div
