@@ -50,3 +50,18 @@ collections:
       - { name: company, label: Company }
       - { name: where, label: Location, widget: code }
       - { name: moreInfo, label: Description, widget: text, required: false}
+  - name: mention
+    label: Mentions
+    folder: content/mentions
+    extension: json
+    create: true
+    slug: "{{date}}-{{filename}}"
+    fields:
+      - { name: filename, label: filename }
+      - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
+      - { name: month, label: Month, widget: select, options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
+      - { name: shorttitle, label: Title }
+      - { name: authors, label: Authors }
+      - { name: cited, label: Cited }
+      - { name: place, label: Publisher, required: false}
+      - { name: pubweb, label: Publisher Website, required: false}
