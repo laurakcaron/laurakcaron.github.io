@@ -1,0 +1,17 @@
+{
+  "month": "July",
+  "abstract": "Despite decades marked by progress, deep underlying challenges remain in Namibia, undermining the prospects for further advancement. Namibia has been in recession since 2016 and public finances have continued to deteriorate.",
+  "place": "The World Bank",
+  "filename": "namibia-scd",
+  "authors": "The World Bank",
+  "alt": "A map of Namibia titled Basic simulation results, without floods. The map shows simulated changes in income ranging from +10,000 to -40,000 with the largest decreases in the northeast and west of Namibia.",
+  "date": "2020",
+  "fulltextpdf": "https://openknowledge.worldbank.org/bitstream/handle/10986/35434/Namibia-Systematic-Country-Diagnostics.pdf?sequence=1&isAllowed=y",
+  "pubweb": "https://openknowledge.worldbank.org/handle/10986/35434",
+  "pubtype": [
+    "econ",
+    "institutional"
+  ],
+  "image": "images/namibia-scd.png",
+  "shorttitle": "Namibia Systematic Country Diagnostic"
+}
