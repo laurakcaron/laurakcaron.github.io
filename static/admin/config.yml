@@ -16,7 +16,7 @@ collections:
     fields:
       - { name: filename, label: filename }
       - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
-      - { name: month, label: Month, widget: select, options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "December"]}
+      - { name: month, label: Month, widget: select, options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
       - { name: shorttitle, label: Title }
       - { name: authors, label: Authors }
       - { name: place, label: Publisher, required: false}
