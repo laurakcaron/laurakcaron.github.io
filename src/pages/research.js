@@ -6,7 +6,7 @@ import LinkCard from "../components/link-cards"
 export default props => {
   const data = useStaticQuery(graphql`
   query {
-    allPublicationsJson(sort: {fields: [date, month], order:DESC}) {
+    allPublicationsJson(sort: {fields: [date, month], order:[DESC,DESC]}) {
       edges {
         node {
           shorttitle
@@ -48,7 +48,7 @@ export default props => {
     >
     Use the selections below to explore the gallery.
 
-<input type="radio" id="All" name="categories" value="All" aria-label="All"/>
+<input type="radio" id="All" name="categories" value="All" aria-label="All" checked/>
 <input type="radio" id="journal" name="categories" value="journal" aria-label="Journal articles"></input>
 <input type="radio" id="institutional" name="categories" value="institutional"/>
 <input type="radio" id="wp" name="categories" value="wp"></input>
