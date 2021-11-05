@@ -1,0 +1,17 @@
+{
+  "month": "October",
+  "abstract": "The Heyden Observatory, formerly the Georgetown College Observatory, built in 1843, still stands above the campus of Georgetown University in Washington, DC.",
+  "place": "American Astronomical Society Historical Astronomy Division Newsletter",
+  "filename": "observatory-had",
+  "authors": "Laura Caron",
+  "alt": "A photo of the Heyden Observatory, a white building with two stories and a large dome on top.",
+  "date": "2018",
+  "fulltextpdf": "https://had.aas.org/sites/had.aas.org/files/HADN92.pdf",
+  "pubweb": "https://had.aas.org/news/had_news",
+  "pubtype": [
+    "history",
+    "blog"
+  ],
+  "image": "images/observatory-had.png",
+  "shorttitle": "The Heyden Observatory at Georgetown University"
+}
