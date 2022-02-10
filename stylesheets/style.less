@@ -308,6 +308,7 @@ img {
   border-color: rgba(0, 127, 170, 0);
   border-style: solid;
   border-width: 1px;
+  width: 100%;
 }
 
 .gatsby-image-wrapper {
@@ -440,8 +441,8 @@ img {
 }
 
 [value="All"]:checked ~ .card-grid .card{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -450,8 +451,8 @@ img {
 }
 
 [value="institutional"]:checked ~ .card-grid .card[pubtype*="institutional"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -460,8 +461,8 @@ img {
 
 }
 [value="wp"]:checked ~ .card-grid .card[pubtype*="wp"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -470,8 +471,8 @@ img {
 
 }
 [value="journal"]:checked ~  .card-grid .card[pubtype*="journal"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -480,8 +481,8 @@ img {
 
 }
 [value="econ"]:checked ~ .card-grid .card[pubtype*="econ"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -490,8 +491,8 @@ img {
 
 }
 [value="non"]:checked ~ .card-grid .card[pubtype*="non"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -500,8 +501,8 @@ img {
 
 }
 [value="blog"]:checked ~ .card-grid .card[pubtype*="blog"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -510,8 +511,8 @@ img {
 
 }
 [value="conference"]:checked ~ .card-grid .card[pubtype*="conference"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -520,8 +521,8 @@ img {
 
 }
 [value="history"]:checked ~ .card-grid .card[pubtype*="history"]{
-  height:325px;
-  width:200px;
+  height:350px;
+  width:98%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
@@ -597,4 +598,26 @@ input[type="radio"]{
   line-height: 1.2;
   font-size:x-large;
   color:var(--blue);
+}
+
+.Title{
+  font-size: medium;
+}
+
+.Description.Secondary{
+  font-size: small;
+  white-space: pre-line;
+  display: block;
+
+}
+
+.card-grid .Container{
+  border: 0px solid #ccc;
+  background-color: transparent;
+}
+
+.Image{
+  border-radius: 8px;
+  height:200px;
+  object-fit: cover;
 }
