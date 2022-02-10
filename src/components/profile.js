@@ -28,7 +28,7 @@ const Profile = props => {
   return (
     <>
       <div style={{borderRadius:"50%", overflow:"hidden", width:"150px", height:"150px", marginLeft:"auto", marginRight:"auto"}}>
-      <img src={profile_photo} alt={props.name} id="profile-img" style={{ display:"inline", margin:"0", marginLeft: "-10%", marginTop:"-10%"}} />
+      <img src={profile_photo} alt={props.name} id="profile-img" style={{ display:"inline"}} />
       </div>
       <div id="profile-info-wrapper">
         <h4 id="profile-name">{props.name}</h4>

@@ -13,7 +13,7 @@ const LinkCard = props => {
 <div className="card" pubtype={props.pubtype} tabIndex="0" aria-label={props.shorttitle}>
   <div className="first">
     <div className="cardImage" style={{zIndex:"0"}}>
-   <Image filename={props.image} alt={props.alt}></Image>
+   <Image filename={props.image} alt={props.alt} style={{width:"100%"}}></Image>
    </div>
    <div style={{padding:"4px"}}>
    <br></br>

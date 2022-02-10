@@ -14,9 +14,7 @@ const Image = props => (
             relativePath
             name
             childImageSharp {
-              gatsbyImageData(layout: FIXED
-                              width: 198
-                              height: 198)
+              gatsbyImageData(layout: CONSTRAINED)
             }
           }   
         }
