@@ -31,7 +31,7 @@ const Image = props => (
     }
     
     return (
-      <GatsbyImage image={image.node.childImageSharp.gatsbyImageData} />
+      <GatsbyImage image={image.node.childImageSharp.gatsbyImageData} class="gatimg" />
       
       );
   }}

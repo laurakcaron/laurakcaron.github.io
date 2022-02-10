@@ -48,7 +48,7 @@ export default props => {
     >
     Use the selections below to explore the gallery.
 
-<input type="radio" id="All" name="categories" value="All" aria-label="All" checked/>
+<input type="radio" id="All" name="categories" value="All" aria-label="All" checked="checked" />
 <input type="radio" id="journal" name="categories" value="journal" aria-label="Journal articles"></input>
 <input type="radio" id="institutional" name="categories" value="institutional"/>
 <input type="radio" id="wp" name="categories" value="wp"></input>
