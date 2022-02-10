@@ -55,13 +55,10 @@ collections:
     folder: content/mentions
     extension: json
     create: true
-    slug: "{{date}}-{{filename}}"
+    slug: "{{date}}-{{place}}"
     fields:
       - { name: filename, label: filename }
       - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
-      - { name: month, label: Month, widget: select, options: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]}
-      - { name: shorttitle, label: Title }
-      - { name: authors, label: Authors }
-      - { name: cited, label: Cited }
       - { name: place, label: Publisher, required: false}
-      - { name: pubweb, label: Publisher Website, required: false}
+      - { name: url, label: Publisher Website, required: false}
+      - { name: fallbackimg, label: Fallback Image, widget: image, required: false}
