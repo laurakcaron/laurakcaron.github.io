@@ -6,13 +6,11 @@ import { LinkPreview } from '@dhaiwat10/react-link-preview'
 export default props => {
   const data = useStaticQuery(graphql`
   query {
-    allMentionJson(sort: {fields: [date, month], order:[DESC,DESC]}) {
+    allMentionsJson(sort: {fields: [date], order:[DESC,DESC]}) {
       edges {
         node {
-
-          url
+          pubweb
           fallbackimg
-          alt
         }
       }
     }
@@ -20,7 +18,7 @@ export default props => {
   
   `)
 
-  const cardGrid = data.allPublicationsJson.edges.map((item, index) => (
+  const cardGrid = data.allMentionsJson.edges.map((item, index) => (
         <LinkPreview 
 
           url={item.node.pubweb}
