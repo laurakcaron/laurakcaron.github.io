@@ -34,9 +34,10 @@ export default props => {
   return (
     <Layout
       pageTitle="Mentions"
-      pageDescription="Mentions in the media"
+      pageDescription="Mentions in the media or policy briefs"
     >
-
+    Where my work has been mentioned in the news or policy briefs!
+    <br></br>
 <div className="card-grid">
     {cardGrid}
 </div>
