@@ -39,7 +39,7 @@ blockquote *:last-child {
 
 
 code {
-  background: #f4f5f6;
+  background: white;
   border-radius: 0.4rem;
   font-size: 86%;
   margin: 0 0.2rem;
@@ -48,7 +48,7 @@ code {
 }
 
 pre {
-  background: #f4f5f6;
+  background: white;
   border-left: 0.3rem solid #9b4dca;
   overflow-y: hidden;
 }
