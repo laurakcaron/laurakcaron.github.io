@@ -241,6 +241,13 @@ module.exports = {
     ],
     experience: [
       {
+        role: "Department Research Assistant",
+        when: "May 2021 - September 2021",
+        company: "Columbia University",
+        where: `<a href="https://blogs.cuit.columbia.edu/ac186/"> Professor Alessandra Casella</a> and <a href="https://econ.columbia.edu/econpeople/victoria-mooers/">Victoria Mooers</a>`,
+        moreInfo: `Work in progress: Women, Men, and Polya Urns. Underrepresentation at Equal Talent in the Absence of Discrimination`
+      },
+      {
         role: "Short-Term Consultant",
         when: "August 2019 – July 2020",
         company: "World Bank Poverty & Inequality Global Practice Group, Africa",
@@ -256,7 +263,7 @@ module.exports = {
       },
       {
         role: "Research Assistant",
-        when: "June 2019 – August 2020",
+        when: "June 2019 – August 2020, May 2021 - September 2021",
         company: "Institute for the Study of International Migration at Georgetown University",
         where: `<a href="https://isim.georgetown.edu/profile/katharine-m-donato/">Professor Katharine Donato</a>, coauthoring with <a href="https://sociology.ucdavis.edu/people/erh">Professor Erin Hamilton</a>`,
         moreInfo: `Analysis of several datasets to prepare profiles of refugees in the United States, including wage differentials between refugees and other immigrants, and to determine the relationship between mental health and migration for migrants from Mexico, paper published. Cleaning and preparing analysis of Bangladesh migration survey for spring conference submission.`
