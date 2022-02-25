@@ -11,6 +11,7 @@ export default props => {
         node {
           pubweb
           fallbackimg
+          explicitimg
         }
       }
     }
@@ -29,6 +30,7 @@ export default props => {
           imageHeight="200px"
          backgroundColor="transparent"
          fallbackImageSrc={item.node.fallbackimg}
+         explicitImageSrc={item.node.explicitimg}
           tabindex="0"
 />
 </a>
