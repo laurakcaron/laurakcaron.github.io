@@ -62,4 +62,4 @@ collections:
       - { name: place, label: Publisher, required: false}
       - { name: pubweb, label: Publisher Website, required: false}
       - { name: fallbackimg, label: Fallback Image, widget: image, required: false}
-      - { name: explicitbackimg, label: Force Image, widget: image, required: false}      
+      - { name: explicitimg, label: Force Image, widget: image, required: false}      
