@@ -20,7 +20,7 @@ export default props => {
   `)
 
   const cardGrid = data.allMentionsJson.edges.map((item, index) => (  
-    <a tabIndex="0" href={item.node.pubweb}>
+    <a tabIndex="0" href={item.node.pubweb} style={{textDecoration: "none"}}>
         <LinkPreview 
 
           url={item.node.pubweb}
@@ -32,6 +32,7 @@ export default props => {
          fallbackImageSrc={item.node.fallbackimg}
          explicitImageSrc={item.node.explicitimg}
           tabindex="0"
+          
 />
 </a>
   ))
