@@ -1,7 +1,11 @@
 {
-  "filename": "ids",
-  "date": "2021",
+  "fallbackimg": "images/ids.png",
+  "abstract": "This collection brings together brief overviews of the social assistance landscape in eight fragile and conflict-affected settings in sub-Saharan Africa and the Middle East: Iraq, Jordan, Lebanon, Mali, Niger, Nigeria, Somalia and Yemen. ",
   "place": "Institute of Development Studies",
+  "filename": "ids",
+  "alt": "Cover of report titled Country Reviews of Social Assistance in Crises",
+  "date": "2021",
+  "imagine": "images/basic_compendium_2021_final4.pdf.jpg",
   "pubweb": "https://wlv.openrepository.com/handle/2436/624586",
-  "fallbackimg": "images/ids.png"
+  "shorttitle": "Country reviews of social assistance in crises: A compendium of rapid assessments of the nexus between social protection and humanitarian assistance in crisis settings"
 }
