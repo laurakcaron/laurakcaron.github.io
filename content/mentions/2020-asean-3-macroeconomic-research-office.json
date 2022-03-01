@@ -3,5 +3,8 @@
   "date": "2020",
   "place": "ASEAN+3 Macroeconomic Research Office",
   "pubweb": "https://www.amro-asia.org/coming-home-are-remittances-in-the-asean3-another-victim-of-the-pandemic/",
-  "fallbackimg": "images/asean.png"
+  "image": "images/asean.png",
+  "alt": "A graph showing remittances increasing from 1992 through 2019 and remaining more stable than other financial flows.",
+  "shorttitle": "Coming Home: Are Remittances in the ASEAN+3 Another Victim of the Pandemic?",
+  "abstract": "Migrant workers and the remittances they send home play an important economic role in several ASEAN+3 member economies."
 }

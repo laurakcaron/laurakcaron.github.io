@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import { LinkPreview } from '@dhaiwat10/react-link-preview'
+import LinkCard from "../components/mention-cards"
 
 export default props => {
   const data = useStaticQuery(graphql`
@@ -9,9 +10,13 @@ export default props => {
     allMentionsJson(sort: {fields: [date], order:[DESC,DESC]}) {
       edges {
         node {
+          date
+          place
+          shorttitle
+          abstract
           pubweb
-          fallbackimg
-          explicitimg
+          image
+          alt
         }
       }
     }
@@ -20,21 +25,16 @@ export default props => {
   `)
 
   const cardGrid = data.allMentionsJson.edges.map((item, index) => (  
-    <a tabIndex="0" href={item.node.pubweb} style={{textDecoration: "none"}}>
-        <LinkPreview 
 
-          url={item.node.pubweb}
-          descriptionLength="50"
-          height="350px"
-          margin="2%"
-          imageHeight="200px"
-         backgroundColor="transparent"
-         fallbackImageSrc={item.node.fallbackimg}
-         explicitImageSrc={item.node.explicitimg}
-          tabindex="0"
-          
-/>
-</a>
+    <LinkCard 
+    date={item.node.date}
+    place={item.node.place}
+    shorttitle={item.node.shorttitle}
+    abstract={item.node.abstract}
+    pubweb={item.node.pubweb}
+    image={item.node.image}
+    alt={item.node.alt}/>
+
   ))
 
   return (
