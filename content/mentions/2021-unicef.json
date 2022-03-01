@@ -2,5 +2,9 @@
   "filename": "unicef",
   "date": "2021",
   "place": "UNICEF",
-  "pubweb": "https://www.unicef.org/reports/learning-earning-displaced-youth"
+  "pubweb": "https://www.unicef.org/reports/learning-earning-displaced-youth",
+  "shorttitle": "'Learning to earning' for displaced youth: Unlocking the power of digital technologies",
+  "imagine": "images/youthlearningherouni341466.jpg",
+  "alt": "Adolescents at digital Skills Development and Robotics Workshop",
+  "abstract": "The rising number of forcibly displaced persons (FDPs) and the growing duration of displacement have made building economic resilience a priority, particularly for young people. By 2019, the global population of FDPs had doubled to 80 million."
 }
