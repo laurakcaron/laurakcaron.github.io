@@ -326,23 +326,28 @@ img {
   transition: 0.3s;
   margin-left: auto;
   margin-right: auto;
+  grid-template-columns: 2fr 5fr;
+  column-gap: 0px;
+  justify-content: top;
+  align-items: top;
+  margin-top:4px;
+  display: grid;
 }
 
 .card-grid{
-  max-width: ;
   padding: 0px;
   border-radius: 20px;
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   margin-right:0px;
   column-gap: 0px;
   justify-content: space-around;
   @media screen and (max-width: 1200px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
   }
    
   @media screen and (max-width: 1024px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
   }
   @media screen and (max-width: 700px) {
     grid-template-columns: repeat(1, 1fr);
@@ -353,9 +358,10 @@ img {
 .first {
   transition: 0.3s;
   background-color: rgba(0, 127, 170, 0);
-  position: absolute;
-  width: 100%;
+  position: relative;
+  max-width: 200px;
   height: 100%;
+  width: 100%;
   bottom: 0;
   opacity: 1;
   z-index: 1;
@@ -364,26 +370,18 @@ img {
 
 }
 .second {
-  position: absolute;
   transition: 0.3s;  
-  opacity: 0;
+  opacity: 1;
   right: 0;
   left: 0;
-  width: 100%;
   height: 100%;
   z-index: 1;
-  padding:15px;
   border-radius: 8px;
-
+  padding-top: 10px;
+  justify-self: stretch;
+  margin-left: 10px;
 }
 
-.card:hover .second, .card:focus-within .second{
-  opacity:1;
-}
-
-.card:hover .first, .card:focus-within .first{
-    opacity: 0.0;
-}
 
 .button-outer{
   text-align: left;
@@ -411,121 +409,92 @@ img {
   }
 }
 
-@keyframes fade_in_show {
-  0% {
-       opacity: 0;
-  }
-
-  100% {
-       opacity: 1;
-  }
-}
-@keyframes fade_out_show {
-  0% {
-       opacity: 1;
-  }
-
-  100% {
-       opacity: 0;
-  }
-}
-
 
 [value="All"]:not(:checked) ~ .card-grid .card{
   height:0px;
-  width:0px;
   visibility: hidden;
   position: absolute;
   display:none;
 }
 
 [value="All"]:checked ~ .card-grid .card{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 }
 
 [value="institutional"]:checked ~ .card-grid .card[pubtype*="institutional"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="wp"]:checked ~ .card-grid .card[pubtype*="wp"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="journal"]:checked ~  .card-grid .card[pubtype*="journal"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="econ"]:checked ~ .card-grid .card[pubtype*="econ"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="non"]:checked ~ .card-grid .card[pubtype*="non"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="blog"]:checked ~ .card-grid .card[pubtype*="blog"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="conference"]:checked ~ .card-grid .card[pubtype*="conference"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
 [value="history"]:checked ~ .card-grid .card[pubtype*="history"]{
-  height:350px;
-  width:98%;
+  height:100%;
   visibility: visible;
   opacity: 1;
   transition: height 0s, width 0s, visibility 0s, opacity 0.2s linear;
-  display:unset;
+  display:grid;
   position:relative;
 
 }
@@ -622,9 +591,15 @@ input[type="radio"]{
 }
 
 .gatimg {
-  opacity:1 !important;
+vertical-align: middle;  
+
 }
 
 .SiteDetails{
   text-decoration: underline;
+}
+.cardImage{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
