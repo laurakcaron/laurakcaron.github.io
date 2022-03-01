@@ -60,7 +60,8 @@ collections:
       - { name: filename, label: filename }
       - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
       - { name: place, label: Publisher, required: false}
+      - { name: shorttitle, label: Title }
       - { name: pubweb, label: Publisher Website, required: false}
-      - { name: imagine, label: Image, widget: image, required: false}
+      - { name: image, label: Image, widget: image, required: false}
       - { name: alt, label: Alt Text, widget: text, required: false}
       - { name: abstract, label: Abstract, widget: text, required: false}
