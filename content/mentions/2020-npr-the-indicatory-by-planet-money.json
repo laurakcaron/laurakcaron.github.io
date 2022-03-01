@@ -1,7 +1,11 @@
 {
-  "filename": "NPR_remittances",
-  "date": "2020",
+  "fallbackimg": "https://media.npr.org/assets/img/2020/10/23/gettyimages-1228323342-199d58ec6c9e0b501cea00a9c4d9cb7b53d6bbf9-s1600-c85.webp",
+  "abstract": "Each year, up to 270 million immigrants around the world send money to their home countries. In 2019, remittances hit an all-time of over $550 billion. Then the coronavirus pandemic hit, and triggered a global recession. ",
   "place": "NPR The Indicatory by Planet Money",
+  "filename": "NPR_remittances",
+  "alt": "A man wearing a face mask passes by a screen displaying the currency exchange rate of the Russian ruble with U.S. dollar and Euro, September 2020.",
+  "date": "2020",
+  "imagine": "images/gettyimages-1228323342-199d58ec6c9e0b501cea00a9c4d9cb7b53d6bbf9-s1600-c85.webp",
   "pubweb": "https://www.npr.org/2020/10/23/927249563/the-great-remittance-mystery",
-  "fallbackimg": "https://media.npr.org/assets/img/2020/10/23/gettyimages-1228323342-199d58ec6c9e0b501cea00a9c4d9cb7b53d6bbf9-s1600-c85.webp"
+  "shorttitle": "The Great Remittance Mystery"
 }
