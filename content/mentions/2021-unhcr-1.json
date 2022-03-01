@@ -1,7 +1,11 @@
 {
-  "filename": "unhcr_uganda_knowledge",
-  "date": "2021",
+  "fallbackimg": "images/unhcr.png",
+  "abstract": "Using socioeconomic data to promote employment solutions for refugees in Uganda\n",
   "place": "UNHCR",
+  "filename": "unhcr_uganda_knowledge",
+  "alt": "Screenshot of the first page of the brief.",
+  "date": "2021",
+  "imagine": "images/big_39ac681381030c9bb1fbbb4277d04c2cb30bdf67.jpg",
   "pubweb": "https://data2.unhcr.org/en/documents/details/88388",
-  "fallbackimg": "images/unhcr.png"
+  "shorttitle": "UNHCR UGANDA - Knowledge Brief: Improving employment outcomes for refugees - July 2021"
 }
