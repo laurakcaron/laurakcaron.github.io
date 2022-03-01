@@ -3,5 +3,8 @@
   "date": "2020",
   "place": "Joint Data Center on Forced Displacement",
   "pubweb": "https://www.jointdatacenter.org/jdc-newsletter-may-2020/",
-  "fallbackimg": "https://www.jointdatacenter.org/wp-content/uploads/2020/08/jdc-headerlogo-170.png"
+  "fallbackimg": "https://www.jointdatacenter.org/wp-content/uploads/2020/08/jdc-headerlogo-170.png",
+  "imagine": "images/jdc-headerlogo-170.png",
+  "alt": "Logo of the Joint Data Center on Forced Displacement",
+  "abstract": "This month’s Literature Review Update focuses on jobs and livelihoods for those forcibly displaced. Some 15 recent articles are summarized on the evidence for various innovations and experiences in different settings, both in camps, as in Dollo Ado in Ethiopia, Kakuma in Kenya, Cox’s Bazar in Bangladesh, and at country level, with examples from Colombia, Jordan, Turkey and Sierra Leone."
 }
