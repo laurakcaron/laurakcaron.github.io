@@ -3,5 +3,7 @@
   "filename": "dma",
   "date": "2020",
   "place": "DMA Global",
-  "fallbackimg": "https://www.dmaglobal.co/sites/default/files/dma-global-logo-web_0.gif"
+  "fallbackimg": "https://www.dmaglobal.co/sites/default/files/dma-global-logo-web_0.gif",
+  "imagine": "images/dma-global.gif",
+  "alt": "Logo for DMA Global"
 }
