@@ -1,7 +1,11 @@
 {
-  "filename": "businessmirror",
-  "date": "2021",
+  "fallbackimg": "https://businessmirror.com.ph/wp-content/uploads/2021/03/A6-A7-BL.jpg",
+  "abstract": "Some call it olfactory memory. It’s what Rodel Guco, standing near where water burbles on one of the shores of the seaport city of Valetta, Malta, says what his nose remembers after briefly taking off his face mask.",
   "place": "Business Mirror",
+  "filename": "businessmirror",
+  "alt": "A black and white profile drawing of a masculine figure standing in front of a coastal town. A figure out of the frame thrusts a fistful of currency bills towards their face.",
+  "date": "2021",
+  "imagine": "images/a6-a7-bl.jpg",
   "pubweb": "https://businessmirror.com.ph/2021/03/11/mysteries-shroud-higher-migra-dollars-to-major-remittance-receiving-countries/",
-  "fallbackimg": "https://businessmirror.com.ph/wp-content/uploads/2021/03/A6-A7-BL.jpg"
+  "shorttitle": "Mysteries shroud higher ‘migra-dollars’ to major remittance-receiving countries"
 }
