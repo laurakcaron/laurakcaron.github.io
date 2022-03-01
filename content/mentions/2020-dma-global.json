@@ -1,10 +1,11 @@
 {
-  "pubweb": "https://www.dmaglobal.co/blog/remittances-remain-steady-during-covid-19-despite-predicted-sharp-decline",
-  "filename": "dma",
-  "date": "2020",
-  "place": "DMA Global",
   "fallbackimg": "https://www.dmaglobal.co/sites/default/files/dma-global-logo-web_0.gif",
-  "imagine": "images/dma-global.gif",
+  "abstract": "The COVID-19 pandemic has caused significant distress to families and economies worldwide, including to migrants and their remittances. Given the job losses and high rates of unemployment due to this virus, the World Bank had initially predicted remittances to decline by 20 per cent in 2020. However, for most receiving regions, this prediction has been contradicted by either steady or increased volume of remittances.",
+  "place": "DMA Global",
+  "filename": "dma",
   "alt": "Logo for DMA Global",
-  "abstract": "The COVID-19 pandemic has caused significant distress to families and economies worldwide, including to migrants and their remittances. Given the job losses and high rates of unemployment due to this virus, the World Bank had initially predicted remittances to decline by 20 per cent in 2020. However, for most receiving regions, this prediction has been contradicted by either steady or increased volume of remittances."
+  "date": "2020",
+  "imagine": "images/dma-global.gif",
+  "pubweb": "https://www.dmaglobal.co/blog/remittances-remain-steady-during-covid-19-despite-predicted-sharp-decline",
+  "shorttitle": "Remittances remain steady during COVID-19 despite predicted sharp decline"
 }
