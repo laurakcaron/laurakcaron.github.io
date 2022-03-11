@@ -1,11 +1,11 @@
 {
   "fallbackimg": "https://www.unhcr.org/people-forced-to-flee-book/wp-content/uploads/sites/137/2021/10/Cover_mockup.jpg",
-  "alt": "Cover of book titled People Forced to Flee",
+  "abstract": "Produced by UNHCR, the United Nations agency charged with safeguarding the rights and well-being of refugees, other forcibly displaced people and stateless persons around the globe. Traces the history of asylum from ancient period to modern times.",
   "place": "UNHCR",
   "filename": "unhcr_forced",
-  "abstract": "Produced by UNHCR, the United Nations agency charged with safeguarding the rights and well-being of refugees, other forcibly displaced people and stateless persons around the globe. Traces the history of asylum from ancient period to modern times.",
+  "alt": "Cover of book titled People Forced to Flee",
   "date": "2022",
+  "pubweb": "https://data2.unhcr.org/en/documents/download/91169",
   "image": "images/forcedtoflee.PNG",
-  "pubweb": "https://global.oup.com/academic/product/people-forced-to-flee-9780198786450?cc=us&lang=en&",
   "shorttitle": " People Forced to Flee: History, Change and Challenge"
 }
