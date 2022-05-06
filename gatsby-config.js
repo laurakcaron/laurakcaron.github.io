@@ -250,14 +250,14 @@ module.exports = {
       {
         role: "Short-Term Consultant",
         when: "August 2019 – July 2020",
-        company: "World Bank Poverty & Inequality Global Practice Group, Africa",
+        company: "World Bank Poverty & Equity Global Practice Group, Africa",
         where: `<a href="https://voxeu.org/users/victorsulla0">Victor Sulla</a> and <a href="https://ghd.georgetown.edu/profile/erwin-r-tiongson/">Professor Erwin Tiongson</a>`,
         moreInfo: `Using geospatial data sources and household surveys to study the impacts of droughts and climate change on poverty and incomes in Namibia. Creating a framework for the extension of this method to understand household climate vulnerability in Southern Africa.`
       },
       {
         role: "Short-Term Consultant",
         when: "April 2019 – July 2020",
-        company: "World Bank Poverty & Inequality Global Practice Group, East Asia",
+        company: "World Bank Poverty & Equity Global Practice Group, East Asia",
         where: `<a href="https://blogs.worldbank.org/team/xubei-luo">Dr. Xubei Luo</a> and <a href="https://ghd.georgetown.edu/profile/erwin-r-tiongson/">Professor Erwin Tiongson</a>`,
         moreInfo: `Preparing analysis and visualizations of three survey data sources to support research on profiles of the middle class and social mobility in the Philippines.`
       },
