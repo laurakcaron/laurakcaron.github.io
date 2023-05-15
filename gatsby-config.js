@@ -242,7 +242,7 @@ module.exports = {
     experience: [
       {
         role: "Research Assistant",
-        when: "February 2022 - present",
+        when: "February 2022 - May 2023",
         company: "World Bank",
         where: `<a href="https://www.worldbank.org/en/publication/wdr2023"> World Development Report 2023</a>`,
       },

@@ -26,6 +26,8 @@ collections:
       - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "history", "journal", "blog", "institutional", "wp", "conference"], required: false}
       - { name: fulltextpdf, label: Full Text PDF, required: false}
       - { name: pubweb, label: Publisher Website, required: false}
+      - { name: presentedat, label: Presented at, required: false, multiple: true,}
+      - { name: slides, label: Slides link, required: false}      
   - name: resource
     label: Resource
     folder: content/resources
