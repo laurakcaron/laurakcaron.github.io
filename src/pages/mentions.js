@@ -44,7 +44,7 @@ export default props => {
     >
     Where my work has been mentioned in the news or policy briefs!
     <br></br>
-<div className="card-grid">
+<div className="mentions card-grid">
     {cardGrid}
 </div>
     

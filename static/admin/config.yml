@@ -15,7 +15,7 @@ collections:
     slug: "{{date}}-{{filename}}"
     fields:
       - { name: filename, label: filename }
-      - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
+      - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"]}
       - { name: month, label: Month, widget: select, options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]}
       - { name: shorttitle, label: Title }
       - { name: authors, label: Authors }
@@ -60,7 +60,7 @@ collections:
     slug: "{{date}}-{{place}}"
     fields:
       - { name: filename, label: filename }
-      - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]}
+      - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024"]}
       - { name: place, label: Publisher, required: false}
       - { name: shorttitle, label: Title }
       - { name: pubweb, label: Publisher Website, required: false}

@@ -16,6 +16,8 @@ export default props => {
     <Layout pageTitle="About" pageDescription="Learn more about me">
       <div dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.about }} />
       <p>You can <a href="Laura_Caron_CV_Nov2022.pdf">download my CV here</a>. </p>
+
+      <p><a href="/research" >Learn more about my research here!</a></p>
     </Layout>
   )
 }
