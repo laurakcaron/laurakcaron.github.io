@@ -8,6 +8,10 @@
   "date": "2022",
   "fulltextpdf": "https://doi.org/10.1093/ooec/odac001",
   "pubweb": "https://doi.org/10.1093/ooec/odac001",
+  "slides": "../Caron_Empty_Digital_Wallets_Slides_06_2022.pdf",
+  "presentedat": [
+    "Better than Cash Alliance, June 2022."
+  ],
   "pubtype": [
     "journal",
     "econ"

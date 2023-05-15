@@ -1,16 +1,20 @@
 {
   "month": "7",
   "abstract": "The COVID-19 pandemic placed new constraints and prices on commuting to work around the world.\nHowever, traditional methods of measuring household welfare (and, accordingly, poverty and inequality) based on expenditures or consumption have not taken into consider the implications of these changes. We propose a new method to impute transportation cost equivalents for household consumption or expenditure aggregates. First, we outline the theory showing significant mis-measurement of welfare for households who are able to shift into remote work during the pandemic. We will show that taking transportation costs into account has important\nimplications for evaluating the impacts of the pandemic.",
-  "place": "5th IZA Labor Statistics Workshop: The Measurement of Incomes, Living Costs and Standards of Living",
+  "place": "IZA Discussion Paper No. 15670",
   "filename": "iza-households-in-transit",
   "authors": "Laura Caron and Erwin Tiongson",
   "alt": "A presentation title slide reading \"Households in Transit: COVID-19 and the Changing Measurement of Welfare\". The authors are Laura Caron at Columbia University and Erwin Tiongson at Georgetown University. The slide shows icons of a bicycle, a scooter, a truck, a laptop, a person working at a computer, and a train.",
   "date": "2022",
-  "fulltextpdf": "https://conference.iza.org/conference_files/Statistic_2022/caron_l32482.pdf",
+  "fulltextpdf": "https://docs.iza.org/dp15670.pdf",
   "pubweb": "https://conference.iza.org/conference_files/Statistic_2022/program",
+  "presentedat": [
+    "5th IZA Labor Statistics Workshop: The Measurement of Incomes, Living Costs and Standards of Living, July 2022.",
+    "Korean Development Institute (KDI) School Impact Evaluation Conference, August 2022."
+  ],
   "pubtype": [
     "econ",
-    "conference"
+    "wp"
   ],
   "image": "images/image-3-.png",
   "shorttitle": "Households in Transit: COVID-19 and the Changing Measurement of Welfare"
