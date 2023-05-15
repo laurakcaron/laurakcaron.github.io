@@ -34,6 +34,7 @@
   line-height: 1.5;
   font-size: 1.2em;
   padding: 0 2px 4px 2px;
+  text-decoration: none;
 }
 .site-nav .page-link:not(:last-child) {
   margin-right: 60px;
@@ -289,6 +290,7 @@ a:hover,
 a:focus,
 .site-nav .page-link.active {
   color: var(--green) !important;
+  text-decoration: underline dotted;
 }
 .site-header {
   border-top-color: var(--blue);
@@ -406,10 +408,11 @@ img {
   display: inline-block;
   &:hover {
     background-color: var(--green);
+    text-decoration: underline dotted;
   }
 }
 
-
+/*
 [value="All"]:not(:checked) ~ .card-grid .card{
   height:0px;
   visibility: hidden;
@@ -498,7 +501,7 @@ img {
   position:relative;
 
 }
-
+*/
 .filters {
   text-align: center;
   margin-bottom: 0rem;
@@ -602,4 +605,132 @@ vertical-align: middle;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: 40px;
+}
+
+/* Hide default HTML checkbox */
+#abstracton, #imageson {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#abstracton:checked  ~ .researchSwitch [for="abstracton"] .slider,
+#imageson:not(:checked)  ~ .researchSwitch [for="imageson"] .slider {
+  background-color: var(--red);
+}
+#abstracton:focus  ~ .researchSwitch [for="abstracton"] .slider,
+#imageson:not(:focus)  ~ .researchSwitch [for="imageson"] .slider {
+  box-shadow: 0 0 1px var(--red);
+}
+
+#abstracton:checked  ~ .researchSwitch [for="abstracton"] .slider:before ,
+#imageson:not(:checked)  ~ .researchSwitch [for="imageson"] .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  float:right;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.researchSwitch {
+  list-style-type: none;
+  margin-bottom: 0rem;
+  float: right;
+  }
+ 
+.researchSwitch label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0rem;
+  border-radius: 2rem;
+  line-height: normal;
+  cursor: pointer;
+  font-weight:normal;
+
+}
+
+.researchSwitch li {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  column-gap: 10px;
+
+}
+
+
+#abstracton:not(:checked) ~ * .abstract{
+  display:none;
+}
+
+
+#abstracton:checked ~ * .abstract{
+  display:inline;
+
+}
+
+/* Note: image one is reversed */
+#imageson:not(:checked) ~ * .cardImage{
+  display:grid;
+}
+#imageson:checked ~ * .cardImage{
+  
+  display:none;
+  width:0px;
+
+}
+
+#imageson:checked ~ * .first{
+  display:none;
+  width:0px;
+}
+
+
+#imageson:checked ~ * .second{
+    width:100%;
+}
+
+#imageson:checked ~ * .card{
+  grid-template-columns: 7fr;
+  margin-left:0px;
+
 }
