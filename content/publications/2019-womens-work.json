@@ -1,14 +1,18 @@
 {
   "month": "5",
   "abstract": "What drives the gender wage gap between men and women? Across countries, women make 25% less than men, and household work explains 3.7 percentage points of this gap (6.7pp among countries where it is significant, about a quarter of the total wage gap).",
-  "place": "Carroll Round Conference",
+  "place": "In progress",
   "filename": "womens-work",
   "authors": "Laura Caron",
   "alt": "A bar chart with caption that reads: when significant, household work explains on average a quarter of the gender wage gap.",
   "date": "2019",
   "pubtype": [
     "econ",
-    "conference"
+    "conference", 
+    "wp"
+  ],
+  "presentedat": [
+    "Carroll Round Conference, May 2019."
   ],
   "image": "images/womens-work.PNG",
   "shorttitle": "Women’s Work: Can the Burden of Household Work Explain the Gender Wage Gap?"

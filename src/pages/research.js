@@ -19,6 +19,8 @@ export default props => {
           pubweb
           date
           alt
+          slides
+          presentedat
         }
       }
     }
@@ -26,7 +28,8 @@ export default props => {
   
   `)
 
-  const cardGrid = data.allPublicationsJson.edges.map((item, index) => (
+
+  const cardGridPub = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("journal")).map((item, index) => (
         <LinkCard 
           date={item.node.date}
           place={item.node.place}
@@ -38,16 +41,94 @@ export default props => {
           pubtype={item.node.pubtype}
           pubweb={item.node.pubweb}
           image={item.node.image}
-          alt={item.node.alt}/>
+          alt={item.node.alt}
+          slides={item.node.slides}
+          presentedat={item.node.presentedat}          
+          />
   ))
+
+  const cardGridWP = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("wp")).map((item, index) => (
+    <LinkCard 
+      date={item.node.date}
+      place={item.node.place}
+      shorttitle={item.node.shorttitle}
+      authors={item.node.authors}
+      abstract={item.node.abstract}
+      fulltextpdf={item.node.fulltextpdf}
+      //fulltextacc={item.fulltextacc}
+      pubtype={item.node.pubtype}
+      pubweb={item.node.pubweb}
+      image={item.node.image}
+      alt={item.node.alt}
+      slides={item.node.slides}
+      presentedat={item.node.presentedat}   
+      />
+))
+
+
+const cardGridPolicy = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("institutional")).map((item, index) => (
+  <LinkCard 
+    date={item.node.date}
+    place={item.node.place}
+    shorttitle={item.node.shorttitle}
+    authors={item.node.authors}
+    abstract={item.node.abstract}
+    fulltextpdf={item.node.fulltextpdf}
+    //fulltextacc={item.fulltextacc}
+    pubtype={item.node.pubtype}
+    pubweb={item.node.pubweb}
+    image={item.node.image}
+    alt={item.node.alt}
+    slides={item.node.slides}
+    presentedat={item.node.presentedat}   
+    />
+))
+
+
+const cardGridBlog = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("blog") & item.node.pubtype.includes("econ")).map((item, index) => (
+  <LinkCard 
+    date={item.node.date}
+    place={item.node.place}
+    shorttitle={item.node.shorttitle}
+    authors={item.node.authors}
+    abstract={item.node.abstract}
+    fulltextpdf={item.node.fulltextpdf}
+    //fulltextacc={item.fulltextacc}
+    pubtype={item.node.pubtype}
+    pubweb={item.node.pubweb}
+    image={item.node.image}
+    alt={item.node.alt}
+    slides={item.node.slides}
+    presentedat={item.node.presentedat}   
+    />
+))
+
+const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("history")).map((item, index) => (
+  <LinkCard 
+    date={item.node.date}
+    place={item.node.place}
+    shorttitle={item.node.shorttitle}
+    authors={item.node.authors}
+    abstract={item.node.abstract}
+    fulltextpdf={item.node.fulltextpdf}
+    //fulltextacc={item.fulltextacc}
+    pubtype={item.node.pubtype}
+    pubweb={item.node.pubweb}
+    image={item.node.image}
+    alt={item.node.alt}
+    slides={item.node.slides}
+    presentedat={item.node.presentedat}   
+    />
+))
+
 
   return (
     <Layout
       pageTitle="Research"
       pageDescription="Learn more about my research"
     >
-    Use the selections below to explore the gallery.
 
+{/*
 <input type="radio" id="All" name="categories" value="All" aria-label="All" checked="checked" />
 <input type="radio" id="journal" name="categories" value="journal" aria-label="Journal articles"></input>
 <input type="radio" id="institutional" name="categories" value="institutional"/>
@@ -57,7 +138,11 @@ export default props => {
 <input type="radio" id="econ" name="categories" value="econ"></input>
 <input type="radio" id="non" name="categories" value="non"></input>
 <input type="radio" id="history" name="categories" value="history"></input>
+  */}
+<input type="checkbox" id="abstracton" value="abstracton"></input>
+<input type="checkbox" id="imageson" value="imageson"></input>
 
+{/*
 <div class="filters" role="list">
   <li aria-label="All">
     <label for="All" aria-label="All" >All</label>
@@ -87,9 +172,65 @@ export default props => {
     <label for="history">History</label>
   </li> 
 </div>
-<div className="card-grid">
-    {cardGrid}
+*/}
+<div className="researchSwitch" role="list">
+<li>
+  Show images   
+    <label class="switch" for="imageson">
+    <span class="slider round"></span>
+  </label>
+  </li>  
+
+  <li>
+  Show abstracts
+    <label class="switch" for="abstracton">
+    <span class="slider round"></span>
+  </label>
+
+  </li>
 </div>
+
+<div style={{marginTop:"20px"}}>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Publications</h3>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridPub}
+    </div>
+</div>
+
+<div style={{marginTop:"20px"}}>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Working papers & works in progress</h3>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridWP}
+    </div>
+</div>
+
+<div style={{marginTop:"20px"}}>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Policy & institutional reports</h3>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridPolicy}
+    </div>
+</div>
+
+<div style={{marginTop:"20px"}}>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Blog posts & commentary</h3>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridBlog}
+    </div>
+</div>
+
+<div style={{marginTop:"20px"}}>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>History work</h3>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridHistory}
+    </div>
+</div>
+
+
     
     </Layout>
   )

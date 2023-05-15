@@ -10,7 +10,8 @@
   "pubweb": "https://www.ncsl.org/research/environment-and-natural-resources/lead-in-the-water-disclosing-lead-service-lines.aspx",
   "pubtype": [
     "nonecon",
-    "conference"
+    "conference", 
+    "policy"
   ],
   "image": "images/lead-webinar.PNG",
   "shorttitle": "Lead in the Water: Disclosing Lead Service Lines"
