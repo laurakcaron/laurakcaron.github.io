@@ -8,6 +8,10 @@
   "date": "2023",
   "fulltextpdf": "https://bit.ly/wdr2023fullEN",
   "pubweb": "https://www.worldbank.org/en/publication/wdr2023",
+  "pubtype": [
+    "econ",
+    "institutional"
+  ],
   "image": "images/wdr-2023.png",
   "shorttitle": "World Development Report 2023: Migrants, Refugees, and Societies"
 }
