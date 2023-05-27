@@ -27,7 +27,7 @@ const LinkCard = props => {
   <div className="second" style={{lineHeight:"1.1"}} aria-label={props.shorttitle}>
   <div>
    <br></br>
-  <h2>{props.shorttitle} ({props.date})</h2>
+  <h2 className="cardTitle">{props.shorttitle} ({props.date})</h2>
   <div className="button-outer" style={{marginTop:"0px", fontSize:"smaller"}}>
     <a href={props.pubweb} style={{display:pubwebDisplay}}>[Source]</a> &nbsp; 
     <a href={props.fulltextpdf} style={{display:fulltextDisplay}}>[Full text]</a>  &nbsp;

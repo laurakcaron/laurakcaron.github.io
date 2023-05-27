@@ -328,12 +328,14 @@ img {
   transition: 0.3s;
   margin-left: auto;
   margin-right: auto;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 5fr 2fr;
   column-gap: 0px;
   justify-content: top;
   align-items: top;
   margin-top:4px;
   display: grid;
+  pointer-events: none;
+
 }
 
 .card-grid{
@@ -369,8 +371,21 @@ img {
   z-index: 1;
   line-height:15px;
   border-radius: 8px;
+  order: 2;
+  pointer-events: auto;
 
 }
+/*
+.card:focus{
+  grid-template-columns: 2fr 5fr;
+
+}
+.card:focus img{
+  width: 300%;
+  z-index: 100;
+  max-width: 500px;
+}
+*/
 .second {
   transition: 0.3s;  
   opacity: 1;
@@ -384,6 +399,20 @@ img {
   margin-left: 10px;
 }
 
+.gatimg {
+  animation-play-state: running;
+  animation: transitionIn;
+  animation-duration: 0.5s;
+}
+@keyframes transitionIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.cardTitle{
+  font-size: 17px;  
+}
 
 .button-outer{
   text-align: left;
