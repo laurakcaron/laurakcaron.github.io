@@ -81,8 +81,9 @@ figure {
 
 hr {
   box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
+  height: 0.1rem; /* 1 */
   overflow: visible; /* 2 */
+  background-color: #ccc;
 }
 
 /**

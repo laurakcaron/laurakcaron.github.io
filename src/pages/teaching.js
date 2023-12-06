@@ -22,6 +22,7 @@ export default props => {
 <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Teaching Assistantships</h3>
 <hr style={{margin:"1rem"}}></hr>
 <ul style={{listStyleType: "none"}}>
+  <li>Political Economy, Fall 2023. Alessandra Casella, Columbia University Department of Economics. </li>
   <li>Intermediate Microeconomics, Spring 2022. Professor Ingmar Nyman, Columbia University Department of Economics. Evaluation 4.8/5. </li>
   <li>Political Economy, Fall 2021. Alessandra Casella, Columbia University Department of Economics. Evaluation 4.5/5. </li>
   <li>Macroeconomics, Spring 2017. Professor Carol Rogers, Georgetown University Department of Economics. Evaluation 4.1/5.</li>

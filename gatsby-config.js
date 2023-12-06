@@ -241,7 +241,13 @@ module.exports = {
     ],
     experience: [
       {
-        role: "Research Assistant",
+        role: "Research Assistant/Short-Term Consultant",
+        when: "March 2023 – October 2023",
+        company: "World Bank Social Protection Global Practice Group, Europe and Central Asia",
+        where: `<a href="https://voxeu.org/users/victorsulla0">Victor Sulla</a> and <a href="https://ghd.georgetown.edu/profile/erwin-r-tiongson/">Professor Erwin Tiongson</a>`,
+      },
+      {
+        role: "Research Assistant/Short-Term Consultant",
         when: "February 2022 - May 2023",
         company: "World Bank",
         where: `<a href="https://www.worldbank.org/en/publication/wdr2023"> World Development Report 2023</a>`,
@@ -254,14 +260,14 @@ module.exports = {
         moreInfo: `Work in progress: Women, Men, and Polya Urns. Underrepresentation at Equal Talent in the Absence of Discrimination`
       },
       {
-        role: "Short-Term Consultant",
+        role: "Research Assistant/Short-Term Consultant",
         when: "August 2019 – July 2020",
         company: "World Bank Poverty & Equity Global Practice Group, Africa",
         where: `<a href="https://voxeu.org/users/victorsulla0">Victor Sulla</a> and <a href="https://ghd.georgetown.edu/profile/erwin-r-tiongson/">Professor Erwin Tiongson</a>`,
         moreInfo: `Using geospatial data sources and household surveys to study the impacts of droughts and climate change on poverty and incomes in Namibia. Creating a framework for the extension of this method to understand household climate vulnerability in Southern Africa.`
       },
       {
-        role: "Short-Term Consultant",
+        role: "Research Assistant/Short-Term Consultant",
         when: "April 2019 – July 2020",
         company: "World Bank Poverty & Equity Global Practice Group, East Asia",
         where: `<a href="https://blogs.worldbank.org/team/xubei-luo">Dr. Xubei Luo</a> and <a href="https://ghd.georgetown.edu/profile/erwin-r-tiongson/">Professor Erwin Tiongson</a>`,

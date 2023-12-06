@@ -191,18 +191,18 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Publications</h3>
-    <hr style={{margin:"1rem"}}></hr>
-    <div className="card-grid">
-      {cardGridPub}
-    </div>
-</div>
-
-<div style={{marginTop:"20px"}}>
   <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Working papers & works in progress</h3>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridWP}
+    </div>
+</div>
+
+<div style={{marginTop:"20px"}}>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Publications</h3>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridPub}
     </div>
 </div>
 

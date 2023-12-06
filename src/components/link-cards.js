@@ -28,18 +28,18 @@ const LinkCard = props => {
   <div>
    <br></br>
   <h2 className="cardTitle">{props.shorttitle} ({props.date})</h2>
-  <div className="button-outer" style={{marginTop:"0px", fontSize:"smaller"}}>
-    <a href={props.pubweb} style={{display:pubwebDisplay}}>[Source]</a> &nbsp; 
+  <div className="button-outer cardInset" style={{marginTop:"0px", fontSize:"smaller"}}>
+    <span style={{display:pubwebDisplay}}><a href={props.pubweb} >[Source]</a></span> &nbsp; 
     <a href={props.fulltextpdf} style={{display:fulltextDisplay}}>[Full text]</a>  &nbsp;
     <a href={props.slides} style={{display:slidesDisplay}}>[Slides]</a> 
     <span  style={{display:fulltextaccDisplay}}>(<a href={props.fulltextacc} >Accessible version</a>)</span>
     </div>
-   <h3>{props.authors}, </h3>
+   <h3 className="cardInset">{props.authors}, </h3>
   <h3 style={{fontStyle:"italic"}}>{props.place}</h3>
   </div>
     
-    <div className="abstract" ><p style={{fontSize:"smaller", color:"black", marginBottom:"0px", marginTop:"10px"}}>{props.abstract}</p></div>
-    <div className="presentedat" ><p style={{fontSize:"smaller", color:"black", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}}>
+    <div className="abstract cardInset" ><p style={{fontSize:"smaller", color:"black", marginBottom:"0px", marginTop:"10px"}}>{props.abstract}</p></div>
+    <div className="presentedat cardInset" ><p style={{fontSize:"smaller", color:"black", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}}>
       <br></br>
       <br></br>
       Presented at:
