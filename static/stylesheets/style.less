@@ -680,16 +680,16 @@ vertical-align: middle;
 }
 
 #abstracton:checked  ~ .researchSwitch [for="abstracton"] .slider,
-#imageson:not(:checked)  ~ .researchSwitch [for="imageson"] .slider {
+#imageson:checked  ~ .researchSwitch [for="imageson"] .slider {
   background-color: var(--red);
 }
 #abstracton:focus  ~ .researchSwitch [for="abstracton"] .slider,
-#imageson:not(:focus)  ~ .researchSwitch [for="imageson"] .slider {
+#imageson:focus ~ .researchSwitch [for="imageson"] .slider {
   box-shadow: 0 0 1px var(--red);
 }
 
 #abstracton:checked  ~ .researchSwitch [for="abstracton"] .slider:before ,
-#imageson:not(:checked)  ~ .researchSwitch [for="imageson"] .slider:before {
+#imageson:checked  ~ .researchSwitch [for="imageson"] .slider:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
@@ -741,27 +741,27 @@ vertical-align: middle;
 }
 
 /* Note: image one is reversed */
-#imageson:not(:checked) ~ * .cardImage{
+#imageson:checked ~ * .cardImage{
   display:grid;
 }
-#imageson:checked ~ * .cardImage{
+#imageson:not(:checked) ~ * .cardImage{
   
   display:none;
   width:0px;
 
 }
 
-#imageson:checked ~ * .first{
+#imageson:not(:checked) ~ * .first{
   display:none;
   width:0px;
 }
 
 
-#imageson:checked ~ * .second{
+#imageson:not(:checked) ~ * .second{
     width:100%;
 }
 
-#imageson:checked ~ * .card{
+#imageson:not(:checked) ~ * .card{
   grid-template-columns: 7fr;
   margin-left:0px;
 
