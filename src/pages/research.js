@@ -6,7 +6,7 @@ import LinkCard from "../components/link-cards"
 export default props => {
   const data = useStaticQuery(graphql`
   query {
-    allPublicationsJson(sort: {fields: [date, month], order:[DESC,DESC]}) {
+    allPublicationsJson(sort:  {fields: [date, month], order:[DESC,DESC]}) {
       edges {
         node {
           shorttitle
@@ -21,6 +21,7 @@ export default props => {
           alt
           slides
           presentedat
+          mentionedin
           linkname
         }
       }
@@ -53,6 +54,7 @@ export default props => {
           alt={item.node.alt}
           slides={item.node.slides}
           presentedat={item.node.presentedat}
+          mentionedin={item.node.mentionedin}
           showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
           onToggleAbstract={() =>
             setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
@@ -76,6 +78,7 @@ export default props => {
       alt={item.node.alt}
       slides={item.node.slides}
       presentedat={item.node.presentedat}   
+      mentionedin={item.node.mentionedin}
       showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
       onToggleAbstract={() =>
         setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
@@ -100,6 +103,7 @@ const cardGridPolicy = data.allPublicationsJson.edges.filter( (item) => item.nod
     alt={item.node.alt}
     slides={item.node.slides}
     presentedat={item.node.presentedat} 
+    //mentionedin={item.node.mentionedin}
     showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
     onToggleAbstract={() =>
       setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
@@ -123,7 +127,8 @@ const cardGridBlog = data.allPublicationsJson.edges.filter( (item) => item.node.
     image={item.node.image}
     alt={item.node.alt}
     slides={item.node.slides}
-    presentedat={item.node.presentedat}   
+    presentedat={item.node.presentedat}  
+    mentionedin={item.node.mentionedin} 
     showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
     onToggleAbstract={() =>
       setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
@@ -147,6 +152,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
     alt={item.node.alt}
     slides={item.node.slides}
     presentedat={item.node.presentedat}   
+   // mentionedin={item.node.mentionedin}
     showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
     onToggleAbstract={() =>
       setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
