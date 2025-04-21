@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import LinkCard from "../components/link-cards"
@@ -21,6 +21,7 @@ export default props => {
           alt
           slides
           presentedat
+          linkname
         }
       }
     }
@@ -28,6 +29,13 @@ export default props => {
   
   `)
 
+  //Control abstract display individually
+  const [openAbstractId, setOpenAbstractId] = useState(null);
+  // And as a group 
+  const [showAbstract, setShowAbstract] = useState(false);
+  const handleCheckboxChange = (event) => {
+    setShowAbstract(event.target.checked);
+  };
 
   const cardGridPub = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("journal")).map((item, index) => (
         <LinkCard 
@@ -40,10 +48,15 @@ export default props => {
           //fulltextacc={item.fulltextacc}
           pubtype={item.node.pubtype}
           pubweb={item.node.pubweb}
+          linkname={item.node.linkname}
           image={item.node.image}
           alt={item.node.alt}
           slides={item.node.slides}
-          presentedat={item.node.presentedat}          
+          presentedat={item.node.presentedat}
+          showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
+          onToggleAbstract={() =>
+            setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
+          }       
           />
   ))
 
@@ -58,10 +71,15 @@ export default props => {
       //fulltextacc={item.fulltextacc}
       pubtype={item.node.pubtype}
       pubweb={item.node.pubweb}
+      linkname={item.node.linkname}
       image={item.node.image}
       alt={item.node.alt}
       slides={item.node.slides}
       presentedat={item.node.presentedat}   
+      showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
+      onToggleAbstract={() =>
+        setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
+      }     
       />
 ))
 
@@ -77,10 +95,15 @@ const cardGridPolicy = data.allPublicationsJson.edges.filter( (item) => item.nod
     //fulltextacc={item.fulltextacc}
     pubtype={item.node.pubtype}
     pubweb={item.node.pubweb}
+    linkname={item.node.linkname}
     image={item.node.image}
     alt={item.node.alt}
     slides={item.node.slides}
-    presentedat={item.node.presentedat}   
+    presentedat={item.node.presentedat} 
+    showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
+    onToggleAbstract={() =>
+      setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
+    }       
     />
 ))
 
@@ -96,10 +119,15 @@ const cardGridBlog = data.allPublicationsJson.edges.filter( (item) => item.node.
     //fulltextacc={item.fulltextacc}
     pubtype={item.node.pubtype}
     pubweb={item.node.pubweb}
+    linkname={item.node.linkname}
     image={item.node.image}
     alt={item.node.alt}
     slides={item.node.slides}
     presentedat={item.node.presentedat}   
+    showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
+    onToggleAbstract={() =>
+      setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
+    }     
     />
 ))
 
@@ -114,10 +142,15 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
     //fulltextacc={item.fulltextacc}
     pubtype={item.node.pubtype}
     pubweb={item.node.pubweb}
+    linkname={item.node.linkname}
     image={item.node.image}
     alt={item.node.alt}
     slides={item.node.slides}
     presentedat={item.node.presentedat}   
+    showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
+    onToggleAbstract={() =>
+      setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
+    }     
     />
 ))
 
@@ -139,7 +172,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 <input type="radio" id="non" name="categories" value="non"></input>
 <input type="radio" id="history" name="categories" value="history"></input>
   */}
-<input type="checkbox" id="abstracton" value="abstracton"></input>
+<input type="checkbox" id="abstracton" value="abstracton" checked={showAbstract} onChange={handleCheckboxChange}></input>
 <input type="checkbox" id="imageson" value="imageson"></input>
 
 {/*
@@ -173,7 +206,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
   </li> 
 </div>
 */}
-<div className="researchSwitch" role="list">
+<div className="researchSwitch" role="list" style={{fontSize:"smaller"}}>
 <li>
   Show images   
     <label class="switch" for="imageson">
@@ -182,7 +215,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
   </li>  
 
   <li>
-  Show abstracts
+  Show all abstracts
     <label class="switch" for="abstracton">
     <span class="slider round"></span>
   </label>
@@ -207,7 +240,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Policy & institutional reports</h3>
+  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Contributions to policy & institutional reports</h3>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridPolicy}
