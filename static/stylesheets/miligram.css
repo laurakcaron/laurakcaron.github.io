@@ -19,7 +19,7 @@ html {
 
 body {
   color: #606c76;
-  font-family: sans-serif;
+  font-family: "Noto Sans";
   font-size: 1.6em;
   font-weight: 300;
   letter-spacing: 0.01em;
@@ -382,6 +382,7 @@ strong {
 
 p {
   margin-top: 0;
+  font-family: "Noto Sans"
 }
 
 h1,
@@ -398,21 +399,22 @@ h6 {
 h1 {
   font-size: xx-large;
   line-height: 1.2;
+  font-weight: 500;
 }
 
 h2 {
   font-size: medium;
-  font-family: sans-serif;
+  font-family: "Noto Sans";
   display:inline;
   font-stretch: semi-expanded;
   line-height: 1.1;
-  font-weight: lighter;
+  font-weight: 550;
 }
 
 h3 {
   font-size: small;
-  font-weight: light;
-  font-family: sans-serif;
+  font-weight: 300;
+  font-family: "Noto Sans";
   line-height: .8;
   display:inline;
 }
@@ -421,6 +423,7 @@ h4 {
   font-size: 2.2rem;
   letter-spacing: -0.08rem;
   line-height: 1.35;
+  font-weight:300;
 }
 
 h5 {

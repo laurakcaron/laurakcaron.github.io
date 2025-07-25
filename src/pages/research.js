@@ -6,7 +6,7 @@ import LinkCard from "../components/link-cards"
 export default props => {
   const data = useStaticQuery(graphql`
   query {
-    allPublicationsJson(sort:  {fields: [date, month], order:[DESC,DESC]}) {
+    allPublicationsJson(sort:  [{date: DESC}, {month: DESC}]) {
       edges {
         node {
           shorttitle
@@ -212,7 +212,18 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
   </li> 
 </div>
 */}
+
+<nav style={{margin: "0 0",display: "flex", gap: "1.5rem", fontSize: "medium"}} name="categories">
+  <a href="#working-papers"><div class="button" style={{width:"125px"}}>Working papers</div></a>
+  <a href="#publications"><div class="button" style={{width:"125px"}}>Publications</div></a>
+  <a href="#policy"><div class="button" style={{width:"125px"}}>Policy reports</div></a>
+  <a href="#blog"><div class="button" style={{width:"125px"}}>Commentaries</div></a>
+  <a href="#history"><div class="button" style={{width:"125px"}} value="history" id="history">History</div></a>
+</nav>
 <div className="researchSwitch" role="list" style={{fontSize:"smaller"}}>
+
+
+
 <li>
   Show images   
     <label class="switch" for="imageson">
@@ -229,8 +240,9 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
   </li>
 </div>
 
+
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Working papers & works in progress</h3>
+  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="working-papers">Working papers & works in progress</h2>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridWP}
@@ -238,7 +250,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Publications</h3>
+  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="publications">Publications</h2>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridPub}
@@ -246,7 +258,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Contributions to policy & institutional reports</h3>
+  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="policy">Contributions to policy & institutional reports</h2>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridPolicy}
@@ -254,7 +266,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Blog posts & commentary</h3>
+  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="blog">Blog posts & commentary</h2>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridBlog}
@@ -262,7 +274,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>History work</h3>
+  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="history">History work</h2>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridHistory}

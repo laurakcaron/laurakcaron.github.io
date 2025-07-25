@@ -7,7 +7,7 @@ import LinkCard from "../components/mention-cards"
 export default props => {
   const data = useStaticQuery(graphql`
   query {
-    allMentionsJson(sort: {fields: [date], order:[DESC,DESC]}) {
+    allMentionsJson(sort: {date: DESC}) {
       edges {
         node {
           date

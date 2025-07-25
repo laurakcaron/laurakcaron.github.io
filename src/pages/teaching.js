@@ -13,20 +13,20 @@ export default props => {
       pageDescription="Learn more about my teaching experience"
     >
 <div style={{listStyleType: "none"}}>
-<h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Teaching Awards</h3>
+<h2 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Teaching Awards</h2>
 <hr style={{margin:"1rem"}}></hr>
 <ul style={{listStyleType: "none"}}>
 <li>Wueller Teaching Award for Best TA in PhD Courses, AY 2023-2024, Columbia Department of Economics</li>
   <li>Wueller Teaching Award for Best TA in Undergraduate Core Courses, AY 2021-2022, Columbia Department of Economics</li>
 </ul>
 
-<h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Instructor of Record</h3>
+<h2 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Instructor of Record</h2>
 <hr style={{margin:"1rem"}}></hr>
 <ul style={{listStyleType: "none"}}>
   <li>Labor Economics, Summer 2024. Columbia University Department of Economics. Evaluation 4.5/5.  </li>
 </ul>
 
-<h3 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Teaching Assistantships</h3>
+<h2 style={{lineHeight:"1.1", fontSize:"larger", marginBottom: "0px"}}>Teaching Assistantships</h2>
 <hr style={{margin:"1rem"}}></hr>
 <ul style={{listStyleType: "none"}}>
   <li>PhD Econometrics, Spring 2024. Jushan Bai and Simon Lee, Columbia University Department of Economics. Evaluation 4.8/5.  </li>

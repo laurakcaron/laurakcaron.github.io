@@ -24,14 +24,15 @@ const Image = props => (
   render={data => {
    const image = data.images.edges.find(n => {
       let regex = /[^/]*$/g
-      return n.node.relativePath.includes(regex.exec(props.filename));
+      return props.filename && props.filename.includes(regex.exec(n.node.relativePath));
     });
     if (!image) {
-      return null;
-    }
+       // return <div>Image not found: {props.filename}</div>;
+       return null;
+        }
     
     return (
-      <img src={image.node.childImageSharp.gatsbyImageData.images.fallback.src} lazy alt class="gatimg" />
+      <GatsbyImage image={getImage(image.node)} alt={props.alt} loading="lazy" className="gatimg" />
       
       );
   }}

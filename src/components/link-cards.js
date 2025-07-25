@@ -37,8 +37,8 @@ const LinkCard = props => {
   <h3 style={{fontStyle:"italic"}}>{props.place}</h3>  
   <br></br>
     <a onClick={props.onToggleAbstract} style={{display:absDisplay}}>[Abstract]</a> &nbsp; 
-    <span style={{display:pubwebDisplay}}><a href={props.pubweb} >[{props.linkname}]</a></span> &nbsp; 
-    <a href={props.fulltextpdf} style={{display:fulltextDisplay}}>[Full text]</a>  &nbsp;
+    <span style={{display:pubwebDisplay}}><a href={props.pubweb} target="blank">[{props.linkname}]</a></span> &nbsp; 
+    <a href={props.fulltextpdf} style={{display:fulltextDisplay}} target="blank">[Full text]</a>  &nbsp;
     <a href={props.slides} style={{display:slidesDisplay}} target>[Slides]</a> 
     <span  style={{display:fulltextaccDisplay}}>(<a href={props.fulltextacc} >Accessible version</a>)</span>
     </div>

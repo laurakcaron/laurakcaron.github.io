@@ -471,20 +471,29 @@ module.exports = {
     font: "default",
   },
   plugins: [
-    // Make sure this plugin is first in the array of plugins
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "G-124XFG2YGW",
-        head: true,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
           "G-124XFG2YGW",
            ],
+      },
+    },
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Open Sans`,
+            file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`,
+          },
+          {
+            name: `Noto Sans`,
+            file: `https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap`,
+          },
+        ],
       },
     },
     `gatsby-plugin-sharp`,
