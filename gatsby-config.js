@@ -14,7 +14,7 @@ module.exports = {
       {name: "github", link:"https://github.com/laurakcaron"},
     ],
     about: `
-      <p>I am a PhD Student in Economics at Columbia University interested in applied micro (labor and education) and econometrics.</p>
+      <p>I am a PhD Student in Economics at Columbia University interested in applied micro (labor and education) and econometrics. I am on the 2025-2026 job market.</p>
       `,
     research: [
       {
