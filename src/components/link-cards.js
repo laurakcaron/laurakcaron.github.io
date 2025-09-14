@@ -7,7 +7,8 @@ var black = Color.rgb([255, 255, 255])
 
 const LinkCard = props => {
   const absDisplay = !(props.abstract) ? "none" : "inline";
-  const abstractShown = !(props.showAbstract) ? "none" : "inline";
+  const abstractShown = (props.pubtype && props.pubtype.includes("jmp")) ? "inline" : (props.showAbstract ? "inline" : "none");
+  const placeDisplay = !(props.place) ? "none" : "inline";
   const pubwebDisplay = !(props.pubweb) ? "none" : "inline";
   const fulltextDisplay = !(props.fulltextpdf) ? "none" : "inline";
   const fulltextaccDisplay = !(props.fulltextacc) ? "none" : "inline";
@@ -33,8 +34,8 @@ const LinkCard = props => {
   <h2 className="cardTitle">{props.shorttitle} ({props.date})</h2>
   <br></br>
   <div className="button-outer cardInset" style={{marginTop:"0px", fontSize:"smaller"}}>
-  <h3>{props.authors}, </h3>
-  <h3 style={{fontStyle:"italic"}}>{props.place}</h3>  
+  <h3>{props.authors}</h3>
+  <h3 style={{fontStyle:"italic", display:placeDisplay}}>, {props.place}</h3>  
   <br></br>
     <a onClick={props.onToggleAbstract} style={{display:absDisplay}}>[Abstract]</a> &nbsp; 
     <span style={{display:pubwebDisplay}}><a href={props.pubweb} target="blank">[{props.linkname}]</a></span> &nbsp; 
@@ -44,7 +45,7 @@ const LinkCard = props => {
     </div>
   </div>
   <div className="cardInset" style={{ fontSize: "smaller", marginTop: "10px" }}>
-    <div className="abstract cardInset" ><p style={{fontSize:"1.05em", marginBottom:"0px", marginTop:"10px", display:abstractShown}}>{props.abstract}</p></div>
+    <div className="abstract cardInset" style={{textAlign:"justify", textJustify:"inter-word"}} ><p style={{fontSize:"1.05em", marginBottom:"0px", marginTop:"10px", display:abstractShown}}>{props.abstract}</p></div>
   </div>
     <div className="presentedat cardInset" ><p style={{fontSize:"smaller", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}}>
       <br></br>

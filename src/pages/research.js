@@ -86,6 +86,30 @@ export default props => {
       />
 ))
 
+  const cardGridJMP = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("jmp")).map((item, index) => (
+    <LinkCard 
+      date={item.node.date}
+      place={item.node.place}
+      shorttitle={item.node.shorttitle}
+      authors={item.node.authors}
+      abstract={item.node.abstract}
+      fulltextpdf={item.node.fulltextpdf}
+      //fulltextacc={item.fulltextacc}
+      pubtype={item.node.pubtype}
+      pubweb={item.node.pubweb}
+      linkname={item.node.linkname}
+      image={item.node.image}
+      alt={item.node.alt}
+      slides={item.node.slides}
+      presentedat={item.node.presentedat}   
+      mentionedin={item.node.mentionedin}
+      showAbstract={showAbstract || openAbstractId === item.node.shorttitle}
+      onToggleAbstract={() =>
+        setOpenAbstractId((prev) => (prev === item.node.shorttitle ? null : item.node.shorttitle))
+      }     
+      />
+))
+
 
 const cardGridPolicy = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("institutional")).map((item, index) => (
   <LinkCard 
@@ -240,7 +264,13 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
   </li>
 </div>
 
-
+<div style={{marginTop:"20px"}}>
+  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="jmp">Job market paper</h2>
+    <hr style={{margin:"1rem"}}></hr>
+    <div className="card-grid">
+      {cardGridJMP}
+    </div>
+</div>
 <div style={{marginTop:"20px"}}>
   <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="working-papers">Working papers & works in progress</h2>
     <hr style={{margin:"1rem"}}></hr>
