@@ -23,7 +23,7 @@ collections:
       - { name: abstract, label: Abstract, widget: text, required: false}
       - { name: image, label: Image, widget: image, required: false}
       - { name: alt, label: Alt Text, widget: text, required: false}
-      - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "history", "journal", "blog", "institutional", "wp", "conference"], required: false}
+      - { name: pubtype, label: Publication Type, widget: select, multiple: true, options: ["econ", "nonecon", "history", "journal", "blog", "institutional", "wp", "conference", "jmp"], required: false}
       - { name: fulltextpdf, label: Full Text PDF, required: false}
       - { name: pubweb, label: Publisher Website, required: false}
       - { name: linkname, label: Link Name, required: false}      
