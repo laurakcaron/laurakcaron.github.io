@@ -1,18 +1,18 @@
 {
   "month": "3",
   "abstract": "Digital financial services (DFSs) may lower certain costs of accessing finance, but they bring new costs, including difficulties accessing mobile networks. Mobile phone towers are more unequally distributed than traditional banks, though mobile phone use is near universal. The results suggest that old inequalities may constrain the promise of new digital technologies.",
+  "slides": "../Caron_Empty_Digital_Wallets_Slides_06_2022.pdf",
+  "linkname": "Link",
   "place": "Oxford Open Economics",
   "filename": "empty-digital-wallets",
-  "authors": "Laura Caron",
+  "authors": "",
   "alt": "Figure 4: Spatial patterns of mobile phone towers and mobile DFS use. The figure shows four maps labeled Nepal, Philippines, Senegal, and Tanzania, which display points representing the spread of mobile phone towers by type (GSM, UMTS, and LTE) compared with the percent of people using digital financial services in various clusters around each country.",
-  "date": "2022",
-  "fulltextpdf": "https://doi.org/10.1093/ooec/odac001",
-  "pubweb": "https://doi.org/10.1093/ooec/odac001",
-  "linkname": "Link",
-  "slides": "../Caron_Empty_Digital_Wallets_Slides_06_2022.pdf",
   "presentedat": [
     "Better than Cash Alliance, June 2022."
   ],
+  "date": "2022",
+  "fulltextpdf": "https://doi.org/10.1093/ooec/odac001",
+  "pubweb": "https://doi.org/10.1093/ooec/odac001",
   "pubtype": [
     "journal",
     "econ"
