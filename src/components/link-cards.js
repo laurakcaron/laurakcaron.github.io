@@ -45,10 +45,10 @@ const LinkCard = props => {
         if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
           e.preventDefault();
           props.onToggleAbstract(e);
-        }}}><a>[Abstract]</a></span> &nbsp; 
-    <span className="cardButton" style={{display:pubwebDisplay}}><a href={props.pubweb} target="blank">[{props.linkname}]</a></span> &nbsp; 
-    <span className="cardButton" style={{display:fulltextDisplay}}><a href={props.fulltextpdf}  target="blank">[PDF]</a> </span> &nbsp;
-    <span className="cardButton" style={{display:slidesDisplay}} ><a href={props.slides} target="blank">[Slides]</a> </span>
+        }}}><a>[Abstract]</a></span> 
+    <span className="cardButton" style={{display:pubwebDisplay}}>&nbsp;<a href={props.pubweb} target="blank">[{props.linkname}]</a></span>  
+    <span className="cardButton" style={{display:fulltextDisplay}}>&nbsp;<a href={props.fulltextpdf}  target="blank">[PDF]</a> </span> 
+    <span className="cardButton" style={{display:slidesDisplay}} >&nbsp;<a href={props.slides} target="blank">[Slides]</a> </span>
     <span className="cardButton" style={{display:fulltextaccDisplay}}>(<a href={props.fulltextacc} >Accessible version</a>)</span>
     </div>
   </div>
