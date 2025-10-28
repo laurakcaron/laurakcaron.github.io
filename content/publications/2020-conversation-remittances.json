@@ -1,18 +1,18 @@
 {
   "month": "10",
   "abstract": "Remittances to countries like Mexico, Pakistan and Vietnam are keeping pace with 2019's record levels or in some cases rising, despite spring forecasts of a 20% decline.",
+  "linkname": "Link",
   "place": "The Conversation",
   "filename": "conversation-remittances",
-  "authors": "Laura Caron and Erwin Tiongson",
+  "authors": "with Erwin Tiongson",
   "alt": "A graph shows the nearly exponential increase in remittances since 1980. It reads: Cash transfers soar. The amount of cash migrants from low- and middle-income countries sent home to their friends and family reached a record $554 billion in 2019. ",
+  "mentionedin": "<a href=\"https://amro-asia.org/coming-home-are-remittances-in-the-asean3-another-victim-of-the-pandemic/\">ASEAN+3 Macroeconomic Research Office</a>, <a href=\"https://businessmirror.com.ph/2021/03/11/mysteries-shroud-higher-migra-dollars-to-major-remittance-receiving-countries/\">Business Mirror</a>, <a href=\"https://www.thecommonwealth-ilibrary.org/index.php/comsec/catalog/download/336/337/2949?inline=1\">The Commonwealth Secretariat</a>, <a href=\"https://www.dmaglobal.co/blog/remittances-remain-steady-during-covid-19-despite-predicted-sharp-decline\">DMA Global</a>, <a href=\"https://www.npr.org/2020/10/23/927249563/the-great-remittance-mystery\">The Indicator from Planet Money (NPR)</a>, <a href=\"https://www.jica.go.jp/Resource/jica-ri/publication/booksandreports/jveaq800000071xq-att/Human_Security_Today_EN_20221031.pdf\">Japan International Cooperation Agency</a>, <a href=\"https://legacy.senate.gov.ph/publications/SEPO/AAG_Migration%20and%20Remittances%20%20amidst%20COVID%2019_final.pdf\">Senate of the Philippines</a>, UNDP (<a href=\"https://www.undp.org/latin-america/publications/when-juncture-meets-structure-vignettes-development-and-covid-19-crisis-latin-america-and-caribbean\">1</a>) (<a href=\"https://www.undp.org/latin-america/blog/graph-for-thought/stand-me-covid-19-and-resilience-remittance-flows-lac\">2</a>)",
   "date": "2020",
   "pubweb": "https://theconversation.com/immigrants-are-still-sending-lots-of-money-home-despite-the-coronavirus-job-losses-for-now-148387",
-  "linkname": "Link",
   "pubtype": [
     "econ",
     "blog"
   ],
-  "mentionedin": "<a href=\"https://amro-asia.org/coming-home-are-remittances-in-the-asean3-another-victim-of-the-pandemic/\">ASEAN+3 Macroeconomic Research Office</a>, <a href=\"https://businessmirror.com.ph/2021/03/11/mysteries-shroud-higher-migra-dollars-to-major-remittance-receiving-countries/\">Business Mirror</a>, <a href=\"https://www.thecommonwealth-ilibrary.org/index.php/comsec/catalog/download/336/337/2949?inline=1\">The Commonwealth Secretariat</a>, <a href=\"https://www.dmaglobal.co/blog/remittances-remain-steady-during-covid-19-despite-predicted-sharp-decline\">DMA Global</a>, <a href=\"https://www.npr.org/2020/10/23/927249563/the-great-remittance-mystery\">The Indicator from Planet Money (NPR)</a>, <a href=\"https://www.jica.go.jp/Resource/jica-ri/publication/booksandreports/jveaq800000071xq-att/Human_Security_Today_EN_20221031.pdf\">Japan International Cooperation Agency</a>, <a href=\"https://legacy.senate.gov.ph/publications/SEPO/AAG_Migration%20and%20Remittances%20%20amidst%20COVID%2019_final.pdf\">Senate of the Philippines</a>, UNDP (<a href=\"https://www.undp.org/latin-america/publications/when-juncture-meets-structure-vignettes-development-and-covid-19-crisis-latin-america-and-caribbean\">1</a>) (<a href=\"https://www.undp.org/latin-america/blog/graph-for-thought/stand-me-covid-19-and-resilience-remittance-flows-lac\">2</a>)",
   "image": "images/conversation-remittances.PNG",
   "shorttitle": "Immigrants are still sending lots of money home despite the coronavirus job losses – for now"
 }
