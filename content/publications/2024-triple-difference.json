@@ -1,7 +1,7 @@
 {
   "month": "5",
   "abstract": "Triple difference designs have become increasingly popular in empirical economics. The advantage of a triple difference design is that, within treatment group, it allows for another subgroup of the population -- potentially less impacted by the treatment -- to serve as a control for the subgroup of interest. While literature on difference-in-differences has discussed heterogeneity in treatment effects between treated and control groups or over time, little attention has been given to the implications of heterogeneity in treatment effects between subgroups. In this paper, I show that interpretation of the usual triple difference parameter of interest, the difference in average treatment effects on the treated between subgroups, may be affected by this kind of heterogeneity. I propose a new parameter of interest, the causal difference in average treatment effects on the treated, which makes causal comparisons between subgroups. I discuss assumptions for identification and derive the semiparametric efficiency bounds for this parameter. I then propose doubly-robust, efficient estimators for this parameter. I use a simulation study to highlight the desirable finite-sample properties of these estimators, as well as to show the difference between this parameter and the usual triple difference parameter of interest. An empirical application shows the importance of considering treatment effect heterogeneity in practical applications. ",
-  "linkname": "arXiv",
+  "linkname": "Full text on arXiv",
   "place": "",
   "filename": "triple-difference",
   "authors": "Laura Caron",
