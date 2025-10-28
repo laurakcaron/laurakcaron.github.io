@@ -1,14 +1,14 @@
 {
   "month": "6",
   "abstract": "As economies have reopened following the Covid-19 lockdowns, spending has increased sharply in many Western economies. Some believe we are seeing the release of “pent up” demand as households spend savings built up earlier in the pandemic. But new evidence gives reason to doubt this hypothesis.",
+  "linkname": "Link",
   "place": "Barron's",
   "filename": "savings",
-  "authors": "Laura Caron and Erwin Tiongson",
+  "authors": "with Erwin Tiongson",
   "alt": "A graph shows the savings rates in Australia, Canada, France, Germany, the United Kingdom, and the United States from January 2019 through January/April 2021. The title reads 'Savings rates as a percentage of income spiked in 2020. They're yet to fall to prepandemic levels'. The graph shows steady savings rates until April 2020, where there is a spike, following which rates fall slightly but remain higher than previously.",
   "date": "2021",
   "fulltextpdf": "",
   "pubweb": "https://www.barrons.com/articles/the-pandemic-changed-how-we-save-spelling-trouble-for-the-recovery-51624476916",
-  "linkname": "Link",
   "pubtype": [
     "econ",
     "blog"
