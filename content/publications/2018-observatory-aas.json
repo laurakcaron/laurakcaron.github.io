@@ -1,13 +1,13 @@
 {
   "month": "1",
   "abstract": "Founded in 1841 as part of a nascent worldwide network of Jesuit-run astronomical observatories, the Georgetown College Observatory of Georgetown University in Washington, D.C. has been home to more than 125 years of astronomical research, from Father Curley’s calculations of the latitude and longitude of D.C. to Father McNally’s award-winning solar eclipse photography.",
+  "linkname": "Link",
   "place": "American Astronomical Society, AAS Meeting #231",
   "filename": "observatory-aas",
-  "authors": "Laura Caron, Grace Maglieri, and Patrick Seitzer",
+  "authors": "with Grace Maglieri and Patrick Seitzer",
   "alt": "An image of the Heyden Observatory with a title that reads \"The Legacy of the Georgetown College Observatory\"",
   "date": "2018",
   "pubweb": "http://adsabs.harvard.edu/abs/2018AAS...23112602C",
-  "linkname": "Link",
   "pubtype": [
     "history",
     "conference"
