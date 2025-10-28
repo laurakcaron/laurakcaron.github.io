@@ -1,13 +1,13 @@
 {
   "month": "4",
   "abstract": "Not only are physical banks out of reach, people also face barriers to using digital financial services.",
+  "linkname": "Link",
   "place": "The Conversation",
   "filename": "digital-banking-conversation",
-  "authors": "Laura Caron",
+  "authors": "",
   "alt": "Using a phone for a banking transaction. ",
   "date": "2022",
   "pubweb": "https://theconversation.com/digital-banking-is-the-in-thing-but-it-excludes-many-users-in-tanzania-and-senegal-180092",
-  "linkname": "Link",
   "pubtype": [
     "econ",
     "blog"
