@@ -8,8 +8,9 @@ var black = Color.rgb([255, 255, 255])
 const LinkCard = props => {
   const absDisplay = !(props.abstract) ? "none" : "inline";
   const abstractShown = (props.pubtype && props.pubtype.includes("jmp")) ? "inline" : (props.showAbstract ? "inline" : "none");
+  const dateDisplay = (props.hidedate===true) ? "none" : "inline";
   const placeDisplay = !(props.place) ? "none" : "inline";
-  const commaDisplay = (props.pubweb && props.authors) ? "inline" : "none";
+  const commaDisplay = (props.place && props.authors) ? "inline" : "none";
   const pubwebDisplay = !(props.pubweb) ? "none" : "inline";
   const authorDisplay = !(props.authors) ? "none" : "inline";
   const fulltextDisplay = !(props.fulltextpdf) ? "none" : "inline";
@@ -33,7 +34,7 @@ const LinkCard = props => {
   <div className="second" style={{lineHeight:"1.1"}} aria-label={props.shorttitle}>
   <div>
    <br></br>
-  <h2 className="cardTitle">{props.shorttitle} ({props.date})</h2>
+  <h2 className="cardTitle">{props.shorttitle}</h2><h2 style={{display:dateDisplay}}> ({props.date})</h2>
   <br></br>
   <div className="button-outer cardInset" style={{marginTop:"0px", fontSize:"14px"}}>
   <h3 style={{display:authorDisplay}}>&nbsp;{props.authors}</h3>

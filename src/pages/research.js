@@ -18,6 +18,7 @@ export default props => {
           pubtype
           pubweb
           date
+          hidedate
           alt
           slides
           presentedat
@@ -41,6 +42,7 @@ export default props => {
   const cardGridPub = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("journal")).map((item, index) => (
         <LinkCard 
           date={item.node.date}
+          hidedate={item.node.hidedate}
           place={item.node.place}
           shorttitle={item.node.shorttitle}
           authors={item.node.authors}
@@ -65,6 +67,7 @@ export default props => {
   const cardGridWP = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("wp")).map((item, index) => (
     <LinkCard 
       date={item.node.date}
+      hidedate={item.node.hidedate}
       place={item.node.place}
       shorttitle={item.node.shorttitle}
       authors={item.node.authors}
@@ -89,6 +92,7 @@ export default props => {
   const cardGridJMP = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("jmp")).map((item, index) => (
     <LinkCard 
       date={item.node.date}
+      hidedate={item.node.hidedate}
       place={item.node.place}
       shorttitle={item.node.shorttitle}
       authors={item.node.authors}
@@ -114,6 +118,7 @@ export default props => {
 const cardGridPolicy = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("institutional")).map((item, index) => (
   <LinkCard 
     date={item.node.date}
+    hidedate={item.node.hidedate}
     place={item.node.place}
     shorttitle={item.node.shorttitle}
     authors={item.node.authors}
@@ -139,6 +144,7 @@ const cardGridPolicy = data.allPublicationsJson.edges.filter( (item) => item.nod
 const cardGridBlog = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("blog") & item.node.pubtype.includes("econ")).map((item, index) => (
   <LinkCard 
     date={item.node.date}
+    hidedate={item.node.hidedate}
     place={item.node.place}
     shorttitle={item.node.shorttitle}
     authors={item.node.authors}
@@ -163,6 +169,7 @@ const cardGridBlog = data.allPublicationsJson.edges.filter( (item) => item.node.
 const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.node.pubtype.includes("history")).map((item, index) => (
   <LinkCard 
     date={item.node.date}
+    hidedate={item.node.hidedate}
     place={item.node.place}
     shorttitle={item.node.shorttitle}
     authors={item.node.authors}
