@@ -6,6 +6,7 @@
   "filename": "ocr-experiment",
   "authors": "with Tarikua Erda",
   "date": "2025",
+  "hidedate": true,
   "pubweb": "https://www.socialscienceregistry.org/trials/9574",
   "pubtype": [
     "econ",
