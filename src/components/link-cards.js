@@ -56,10 +56,10 @@ const LinkCard = props => {
     <span className="cardButton" style={{display:fulltextaccDisplay}}>(<a href={props.fulltextacc} >Accessible version</a>)</span>
     </div>
   </div>
-  <div className="cardInset" style={{ fontSize: "smaller", marginTop: "10px" }}>
-    <div className="abstract cardInset" style={{textAlign:"justify", textJustify:"inter-word"}}  ><p style={{fontSize:"1.05em", marginBottom:"0px", marginTop:"10px", display:abstractShown}} tabIndex="0">{props.abstract}</p></div>
+  <div className="cardInset" style={{ fontSize: "smaller", marginTop: "10px" }} > 
+    <div className="abstract cardInset" style={{textAlign:"justify", textJustify:"inter-word"}}><p style={{fontSize:"1.05em", marginBottom:"0px", marginTop:"10px", display:abstractShown}}>{props.abstract}</p></div>
   </div>
-    <div className="presentedat cardInset" ><p style={{fontSize:"smaller", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}} tabIndex="0">
+    <div className="presentedat cardInset" ><p style={{fontSize:"smaller", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}}>
       <br></br>
       <br></br>
       Presented at:
@@ -69,7 +69,7 @@ const LinkCard = props => {
   </p></div>
 
     <br></br>
-    <div className="presentedat cardInset" style={{display:mentionedinDisplay, fontSize:"smaller"}} tabIndex="0">Mentioned by:<p style={{fontSize:"small", marginBottom:"0px", marginLeft:"20px"}}  dangerouslySetInnerHTML={{ __html: props.mentionedin }}/>
+    <div className="presentedat cardInset" style={{display:mentionedinDisplay, fontSize:"smaller"}}>Mentioned by:<p style={{fontSize:"small", marginBottom:"0px", marginLeft:"20px"}}  dangerouslySetInnerHTML={{ __html: props.mentionedin }}/>
 
 </div>
 

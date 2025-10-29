@@ -250,27 +250,27 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 */}
 
 <nav style={{margin: "0 0",display: "flex", gap: "0rem 1.5rem", fontSize: "medium", flexWrap:"wrap"}} name="categories">
-  <a href="#working-papers"><div class="button" style={{width:"125px"}}>Working papers</div></a>
+  <a href="#working-papers"><div class="button" style={{width:"125px"}} >Working papers</div></a>
   <a href="#publications"><div class="button" style={{width:"125px"}}>Publications</div></a>
   <a href="#policy"><div class="button" style={{width:"125px"}}>Policy reports</div></a>
   <a href="#blog"><div class="button" style={{width:"125px"}}>Commentaries</div></a>
   <a href="#history"><div class="button" style={{width:"125px"}} value="history" id="history">History</div></a>
 </nav>
 
-<input type="checkbox" id="imageson" value="imageson"></input>
-<input type="checkbox" id="abstracton" value="abstracton" checked={showAbstract} onChange={handleCheckboxChange}></input>
+<input type="checkbox" id="imageson" value="imageson" aria-labelledby="liImages"></input>
+<input type="checkbox" id="abstracton" value="abstracton" checked={showAbstract} onChange={handleCheckboxChange} aria-labelledby="liAbs"></input>
 
 <div className="researchSwitch" role="list" style={{fontSize:"smaller"}}>
 
 <li>
-  Show images   
+  <span id="liImages">Show images </span>  
     <label class="switch" for="imageson">
     <span class="slider round"></span>
   </label>
   </li>  
 
   <li>
-  Show all abstracts
+  <span id="liAbs">Show all abstracts</span>
     <label class="switch" for="abstracton">
     <span class="slider round"></span>
   </label>
@@ -279,14 +279,14 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="jmp">Job market paper</h2>
+  <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="jmp">Job market paper</h1>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridJMP}
     </div>
 </div>
 <div style={{marginTop:"20px"}}>
-  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="working-papers">Working papers & works in progress</h2>
+  <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="working-papers">Working papers & works in progress</h1>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridWP}
@@ -294,7 +294,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="publications">Publications</h2>
+  <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="publications">Publications</h1>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridPub}
@@ -302,7 +302,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="policy">Contributions to policy & institutional reports</h2>
+  <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="policy">Contributions to policy & institutional reports</h1>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridPolicy}
@@ -310,7 +310,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="blog">Blog posts & commentary</h2>
+  <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="blog">Blog posts & commentary</h1>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridBlog}
@@ -318,7 +318,7 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 
 <div style={{marginTop:"20px"}}>
-  <h2 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="history">History work</h2>
+  <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px"}} id="history">History work</h1>
     <hr style={{margin:"1rem"}}></hr>
     <div className="card-grid">
       {cardGridHistory}
