@@ -7,7 +7,8 @@ var black = Color.rgb([255, 255, 255])
 
 const LinkCard = props => {
   const absDisplay = !(props.abstract) ? "none" : "inline";
-  const abstractShown = (props.pubtype && props.pubtype.includes("jmp")) ? "inline" : (props.showAbstract ? "inline" : "none");
+  const abstractShown = !(props.showAbstract) ? "none" : "inline";
+  //(props.pubtype && props.pubtype.includes("jmp")) ? "inline" : (props.showAbstract ? "inline" : "none");
   const dateDisplay = (props.hidedate===true) ? "none" : "inline";
   const placeDisplay = !(props.place) ? "none" : "inline";
   const commaDisplay = (props.place && props.authors) ? "inline" : "none";

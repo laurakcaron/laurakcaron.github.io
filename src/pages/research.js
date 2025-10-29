@@ -32,7 +32,14 @@ export default props => {
   `)
 
   //Control abstract display individually
-  const [openAbstractId, setOpenAbstractId] = useState(null);
+//  const [openAbstractId, setOpenAbstractId] = useState(null);
+  // open the JMP abstract by default (if any), still toggleable afterwards
+  const [openAbstractId, setOpenAbstractId] = useState(() => {
+    const jmp = data.allPublicationsJson.edges.find(
+      e => e.node.pubtype && e.node.pubtype.includes("jmp")
+    );
+    return jmp ? jmp.node.shorttitle : null;
+  });
   // And as a group 
   const [showAbstract, setShowAbstract] = useState(false);
   const handleCheckboxChange = (event) => {
