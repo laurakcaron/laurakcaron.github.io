@@ -216,8 +216,6 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 <input type="radio" id="non" name="categories" value="non"></input>
 <input type="radio" id="history" name="categories" value="history"></input>
   */}
-<input type="checkbox" id="abstracton" value="abstracton" checked={showAbstract} onChange={handleCheckboxChange}></input>
-<input type="checkbox" id="imageson" value="imageson"></input>
 
 {/*
 <div class="filters" role="list">
@@ -251,16 +249,18 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
 </div>
 */}
 
-<nav style={{margin: "0 0",display: "flex", gap: "1.5rem", fontSize: "medium"}} name="categories">
+<nav style={{margin: "0 0",display: "flex", gap: "0rem 1.5rem", fontSize: "medium", flexWrap:"wrap"}} name="categories">
   <a href="#working-papers"><div class="button" style={{width:"125px"}}>Working papers</div></a>
   <a href="#publications"><div class="button" style={{width:"125px"}}>Publications</div></a>
   <a href="#policy"><div class="button" style={{width:"125px"}}>Policy reports</div></a>
   <a href="#blog"><div class="button" style={{width:"125px"}}>Commentaries</div></a>
   <a href="#history"><div class="button" style={{width:"125px"}} value="history" id="history">History</div></a>
 </nav>
+
+<input type="checkbox" id="imageson" value="imageson"></input>
+<input type="checkbox" id="abstracton" value="abstracton" checked={showAbstract} onChange={handleCheckboxChange}></input>
+
 <div className="researchSwitch" role="list" style={{fontSize:"smaller"}}>
-
-
 
 <li>
   Show images   

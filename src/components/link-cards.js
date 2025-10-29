@@ -24,10 +24,12 @@ const LinkCard = props => {
   <li>{item}</li>);
 
     return (
-<div className="card" pubtype={props.pubtype} tabIndex="0" aria-label={props.shorttitle}>
+<div className="card" pubtype={props.pubtype} aria-label={props.shorttitle}>
   <div className="first">
     <div className="cardImage" style={{zIndex:"0", opacity:"1"}}>
+      {props.showImages !== false && (
    <Image filename={props.image} alt={props.alt} style={{width:"100%", opacity: "1"}}></Image>
+      )}
    </div>
  
 </div>
@@ -57,7 +59,7 @@ const LinkCard = props => {
   <div className="cardInset" style={{ fontSize: "smaller", marginTop: "10px" }}>
     <div className="abstract cardInset" style={{textAlign:"justify", textJustify:"inter-word"}}  ><p style={{fontSize:"1.05em", marginBottom:"0px", marginTop:"10px", display:abstractShown}} tabIndex="0">{props.abstract}</p></div>
   </div>
-    <div className="presentedat cardInset" ><p style={{fontSize:"smaller", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}}>
+    <div className="presentedat cardInset" ><p style={{fontSize:"smaller", marginBottom:"0px", marginTop:"10px", display:presentedatDisplay}} tabIndex="0">
       <br></br>
       <br></br>
       Presented at:
@@ -67,7 +69,7 @@ const LinkCard = props => {
   </p></div>
 
     <br></br>
-    <div className="presentedat cardInset" style={{display:mentionedinDisplay, fontSize:"smaller"}}>Mentioned by:<p style={{fontSize:"small", marginBottom:"0px", marginLeft:"20px"}}  dangerouslySetInnerHTML={{ __html: props.mentionedin }}/>
+    <div className="presentedat cardInset" style={{display:mentionedinDisplay, fontSize:"smaller"}} tabIndex="0">Mentioned by:<p style={{fontSize:"small", marginBottom:"0px", marginLeft:"20px"}}  dangerouslySetInnerHTML={{ __html: props.mentionedin }}/>
 
 </div>
 
