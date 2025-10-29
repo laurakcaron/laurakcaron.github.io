@@ -1,13 +1,15 @@
 {
-  "filename": "polya-urns",
-  "date": "2025",
   "month": "1",
-  "shorttitle": "Women, Men, and Polya Urns. Underrepresentation at Equal Talent in the Absence of Discrimination",
-  "authors": "with Alessandra Casella and Victoria Mooers",
+  "abstract": "In a world where the majority and the minority group have equal distributions of talent, where candidates are objectively and accurately evaluated, and no discrimination occurs, the underrepresentation of the minority group in prestigious positions is nonetheless highly sticky. If the sample of candidates from the minority group is numerically smaller, at equal distribution of talent, the most qualified candidate is more likely to belong to the majority sample, mirroring its larger numerical size. If future samples of candidates respond to the realized selection in the expected direction—increasing if the selection came from the sample, decreasing or increasing less if it did not—the higher probability of success in the majority sample will persist. We capture this process with a well-known statistical model: the Polya urn. The richness of existing results and the streamlined model allow us to study and compare different policy interventions. Two robust results are that temporary affirmative action interventions have long-term equalizing effects, and that any decline in the quality of selected candidates is self-correcting, even while the intervention lasts. A simple app (https://caron.shinyapps.io/Women-Men-Polya-Urns/) allows readers to run their own experiments.",
+  "linkname": "App",
   "place": "",
+  "filename": "polya-urns",
+  "authors": "with Alessandra Casella and Victoria Mooers",
+  "date": "2025",
+  "pubweb": "https://caron.shinyapps.io/Women-Men-Polya-Urns/",
   "pubtype": [
     "econ",
     "wp"
   ],
-  "abstract": "In a world where the majority and the minority group have equal distributions of talent, where candidates are objectively and accurately evaluated, and no discrimination occurs, the underrepresentation of the minority group in prestigious positions is nonetheless highly sticky. If the sample of candidates from the minority group is numerically smaller, at equal distribution of talent, the most qualified candidate is more likely to belong to the majority sample, mirroring its larger numerical size. If future samples of candidates respond to the realized selection in the expected direction—increasing if the selection came from the sample, decreasing or increasing less if it did not—the higher probability of success in the majority sample will persist. We capture this process with a well-known statistical model: the Polya urn. The richness of existing results and the streamlined model allow us to study and compare different policy interventions. Two robust results are that temporary affirmative action interventions have long-term equalizing effects, and that any decline in the quality of selected candidates is self-correcting, even while the intervention lasts. A simple app (https://caron.shinyapps.io/Women-Men-Polya-Urns/) allows readers to run their own experiments."
+  "shorttitle": "Women, Men, and Polya Urns. Underrepresentation at Equal Talent in the Absence of Discrimination"
 }
