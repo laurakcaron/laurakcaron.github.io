@@ -17,6 +17,7 @@ collections:
       - { name: filename, label: filename }
       - { name: date, label: Date, widget: select, options: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026", "2027"]}
       - { name: month, label: Month, widget: select, options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]}
+      - { name: hide_date, label: Hide date, widget: boolean, required: false, default: false }
       - { name: shorttitle, label: Title }
       - { name: authors, label: Authors, required: false}
       - { name: place, label: Publisher, required: false}
