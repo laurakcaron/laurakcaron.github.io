@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://gatsby-starter-clean-resume.netlify.com/`,
+    siteUrl: `https://laurakcaron.github.io/`,
     name: `Laura Caron`,
     role: `PhD Student in Economics at Columbia University`,
     email: `laura.caron@columbia.edu`,

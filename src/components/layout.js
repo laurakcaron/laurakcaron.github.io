@@ -5,6 +5,8 @@ import Profile from "./profile"
 import PageHeader from "./page-header"
 import Footer from "./footer"
 import { Helmet } from "react-helmet"
+import profile_photo from "../../static/profile.jpg"
+
 
 const Layout = props => {
   const data = useStaticQuery(graphql`
@@ -19,12 +21,15 @@ const Layout = props => {
             link
           }
           font
+          siteUrl
         }
       }
     }
   `)
 
   const font = data.site.siteMetadata.font || "default"
+  const previewUrl = `${data.site.siteMetadata.siteUrl}/profile.jpg`
+
   return (
     <>
       <Helmet>
@@ -33,8 +38,9 @@ const Layout = props => {
         <title>
           {props.pageTitle} - {data.site.siteMetadata.name || ""}
         </title>
-        <meta name="description" content={props.pageDescription || ""} href="../static/favicon.png"/>
-      </Helmet>
+        <meta property="og:description" content={props.pageDescription || ""} href="../static/favicon.png"/>
+        <meta property="og:image" content={previewUrl} />
+             </Helmet>
 
       <div
         id="site-wrapper"
