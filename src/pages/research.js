@@ -284,6 +284,9 @@ const cardGridHistory = data.allPublicationsJson.edges.filter( (item) => item.no
     <div className="card-grid">
       {cardGridJMP}
     </div>
+    <div>
+      <p style={{fontSize:"1.05em", fontWeight:"bold"}}>Click <a href="https://www.youtube.com/watch?v=FZMdnobZvps" target="blank">here</a> for 5 minute video summary of this paper!</p>
+    </div>
 </div>
 <div style={{marginTop:"20px"}}>
   <h1 style={{lineHeight:"1.1", fontSize:"x-large", marginBottom: "0px", fontFamily:"Noto Sans"}} id="working-papers">Working papers & works in progress</h1>

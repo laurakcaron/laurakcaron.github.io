@@ -40,7 +40,7 @@ const Layout = props => {
         </title>
         <meta property="og:description" content={props.pageDescription || ""} href="../static/favicon.png"/>
         <meta property="og:image" content={previewUrl} />
-             </Helmet>
+      </Helmet>
 
       <div
         id="site-wrapper"
