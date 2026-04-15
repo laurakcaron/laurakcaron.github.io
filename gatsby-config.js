@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://laurakcaron.github.io/`,
-    name: `Laura Caron`,
-    role: `PhD Student in Economics at Columbia University`,
-    email: `laura.caron@columbia.edu`,
+    name: `L. Robin Caron`,
+    role: ``,
+    email: `lkc2142@columbia.edu`,
     socialMedia: [
       {
         name: "twitter",
@@ -14,7 +14,7 @@ module.exports = {
       {name: "github", link:"https://github.com/laurakcaron"},
     ],
     about: `
-      <p>I am a PhD Student in Economics at Columbia University working in applied microeconomics and econometrics. My research focuses on inequality in education and labor markets, especially as they relate to disability.</p> <p style="font-weight:bold">I am on the 2025-2026 job market.</p>
+      <p>I work in applied microeconomics and econometrics. My research focuses on inequality in education and labor markets, especially as they relate to disability.</p> <p>I will be starting as an Assistant Professor of Economics at Haverford College in the 2026-27 academic year.</p>
       `,
     research: [
       {
