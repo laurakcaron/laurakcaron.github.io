@@ -34,7 +34,7 @@ const Profile = props => {
         <h4 id="profile-name">{props.name}</h4>
         <h6 id="profile-role">{props.role}</h6>
         <p id="profile-email">
-          {/* she/her <br /> */}
+         they/them or ey/em <br /> 
           <a href={"mailto:" + props.email}>{props.email || ""}</a>
         </p>
       </div>
