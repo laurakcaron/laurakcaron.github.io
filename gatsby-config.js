@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: `https://laurakcaron.github.io/`,
     name: `L. Robin Caron`,
     role: ``,
-    email: `lkc2142@columbia.edu`,
+    email: `rcaron@haverford.edu`,
     socialMedia: [
       {
         name: "twitter",
@@ -14,7 +14,7 @@ module.exports = {
       {name: "github", link:"https://github.com/laurakcaron"},
     ],
     about: `
-      <p>I work in applied microeconomics and econometrics. My research focuses on inequality in education and labor markets, especially as they relate to disability.</p> <p>I will be starting as an Assistant Professor of Economics at Haverford College in the 2026-27 academic year.</p>
+      <p>I work in applied microeconomics and econometrics. My research focuses on inequality in education and labor markets, especially as they relate to disability.</p> <p>I am an Assistant Professor of Economics at Haverford College.</p>
       `,
     research: [
       {
