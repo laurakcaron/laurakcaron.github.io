@@ -4,7 +4,9 @@
   "place": "",
   "filename": "third-year-paper",
   "authors": "",
-  "presentedat": "2026 APPAM Research Conference",
+  "presentedat": [
+    "2026 APPAM Research Conference"
+  ],
   "date": "2025",
   "hidedate": true,
   "fulltextpdf": "../Caron_Public_Education_Disabled_Students.pdf",
